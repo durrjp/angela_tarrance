@@ -1,10 +1,45 @@
-/* .carousel .thumb img {
+.carousel .thumb img {
     width: 100% !important;
-    height: 100% !important;
 }
 
 .carousel .slide img {
-    max-height: 600px;
-    width: auto;
+    height: 100vh;
 } 
-*/
+
+
+.carousel-overlay {
+    position: absolute;
+    z-index: 1 !important;
+    text-align: end;
+    width: 100%;
+    bottom: .5em;
+    color: white;
+    font-size: 70px;
+}
+
+.personal-profile-container {
+    display: flex;
+    flex-flow: row wrap;
+    background-image:linear-gradient( rgba(72, 72, 77, 0.9), rgba(0, 0, 0, 0.5) ), url("../../images/NashvilleSkyline3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    height: auto
+}
+
+.angela-img-container {
+    background-image:  url("../../images/AngelaPicture.jpg");
+    width: 500px;
+    height:500px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: 2em
+}
+
+.angela-profiletext-container {
+    width: 700px;
+    margin-left: 2em;
+    font-size: 1.3em;
+    margin: 2em;
+    color: white
+}

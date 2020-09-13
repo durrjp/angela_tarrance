@@ -1,0 +1,47 @@
+.footer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(300deg, #00286D 60%, rgb(214, 214, 214) );
+    color: white
+}
+
+
+.footer-title {
+    margin-top: 1em;
+}
+.contact-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.social-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.remax-logo-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.remax-logo {
+    background-image: url("../../images/RemaxAdvantage.jpg");
+    height:100px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    margin: 2em
+}
+
+.footer-subitem {
+    margin: .5em
+}

@@ -1,0 +1,11 @@
+.header-container {
+    position: fixed !important;
+    z-index: 1;
+    width: 100%;
+    text-shadow: rgba(36, 35, 35, 0.486)  1px 1px !important;
+    color: white !important
+}
+
+.navItem {
+    color: white !important
+}

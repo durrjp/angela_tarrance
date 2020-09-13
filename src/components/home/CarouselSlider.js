@@ -10,10 +10,10 @@ export default function CarouselSlider() {
         <div>
             <Carousel dynamicHeight={true} interval={8000} transitionTime={600} infiniteLoop autoPlay showThumbs={false}>
                 <div>
-                    <img src={FancyHouse} alt="house1" />
+                    <img className="carousel-image" src={FancyHouse} alt="house1" />
                 </div>
                 <div>
-                    <img src={Fancyhouse2} alt="house2" />
+                    <img className="carousel-image" src={Fancyhouse2} alt="house2" />
                 </div>
             </Carousel>
         </div>
