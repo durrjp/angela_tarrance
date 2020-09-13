@@ -420,6 +420,8 @@ export default function Home() {
                 <line x1="178" y1="243.9" x2="195" y2="243.9" stroke="white" stroke-width="0.2"/>
                 <line x1="178" y1="242.9" x2="195" y2="242.9" stroke="white" stroke-width="0.2"/>
                 <line x1="178" y1="241.9" x2="195" y2="241.9" stroke="white" stroke-width="0.2"/>
+                <line x1="291.7" y1="127.7" x2="297.7" y2="135.7" stroke="black"/>
+                <line x1="166.398" y1="127.626" x2="160.338" y2="135.58" stroke="black"/>
                 <defs>
                 <filter id="filter0_d" x="232.2" y="83.2" width="8.2" height="33.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -432,6 +434,8 @@ export default function Home() {
                 </filter>
                 </defs>
                 </svg>
+
+
 
             </div>
             <Header />

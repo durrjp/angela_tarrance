@@ -11,7 +11,8 @@ export default function Header() {
         <div className="header-container">
             <Navbar dark expand="md">
                 <NavbarBrand tag={RRNavLink} to = "/">
-                    AT
+                        Angela
+                        Tarrance
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
