@@ -59,9 +59,17 @@
     margin: 1em;
     margin-left: 4em;
     width: 20%;
+    background:none !important;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.308);
     height: 75px;
     font-size: 30px !important;
     font-weight: bolder !important;
+    border: 2px solid white !important;
     border-radius: 5px !important;
+}
 
+.learnmore-button {
+    background: none !important;
+    border: 2px solid white !important;
+    border-radius: 5px;
 }
