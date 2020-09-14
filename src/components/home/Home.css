@@ -10,11 +10,28 @@
 .carousel-overlay {
     position: absolute;
     z-index: 1 !important;
-    text-align: end;
+    text-align: center;
+    top: 30%;
     width: 100%;
-    bottom: .5em;
-    color: white;
-    font-size: 70px;
+    
+}
+
+.carousel-title {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+}
+
+.carousel-details {
+    display: flex;
+    justify-content: space-evenly;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    font-style: italic;
 }
 
 .personal-profile-container {

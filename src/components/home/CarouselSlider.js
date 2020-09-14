@@ -9,7 +9,7 @@ import "./Home.css"
 export default function CarouselSlider() {
     return (
         <div>
-            <Carousel dynamicHeight={true} interval={8000} transitionTime={600} infiniteLoop autoPlay showThumbs={false}>
+            <Carousel dynamicHeight={true} interval={6000} transitionTime={800} infiniteLoop autoPlay showThumbs={false}>
                 <div>
                     <img className="carousel-image" src={FancyHouse} alt="house1" />
                 </div>

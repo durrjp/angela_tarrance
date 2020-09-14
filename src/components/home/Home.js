@@ -19,6 +19,12 @@ export default function Home() {
     return (
         <>
             <div className="carousel-overlay">
+                <p className="carousel-title">ANGELA TARRANCE</p>
+                <div className="carousel-details">
+                    <p>Best Service</p>
+                    <p>Nashville Luxury Homes</p>
+                    <p>Mother</p>
+                </div>
             </div>
             <Header />
             <CarouselSlider />
