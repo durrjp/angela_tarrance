@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { NavLink as RRNavLink } from "react-router-dom";
 import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from "reactstrap"
 import "./Header.css"
@@ -6,30 +6,55 @@ import "./Header.css"
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
+    const [navBackground, setNavBackground] = useState("header-container-clear")
+    const [scroll, setScroll] = useState(1)
+    const navRef = useRef()
+    useEffect(() => {
+        const onScroll = () => {
+            const scrollCheck = window.scrollY > 0
+            if (scrollCheck !== scroll) {
+                setScroll(scrollCheck)
+                setNavBackground("header-container-clear")
+            }
+            else {
+              setNavBackground("header-container-black")
+            }
+        }
+      
+        document.addEventListener("scroll", onScroll)
+      
+        return () => {
+            document.removeEventListener("scroll", onScroll)
+        }
+      }, [scroll, setScroll])
+      
+      
+
     return (
         <>
-        <div className="header-container">
+        <div ref={navRef} className={navBackground}
+        style={{ transition: '.5s ease' }}>
             <Navbar dark expand="md">
                 <NavbarBrand tag={RRNavLink} to = "/">
-                        Angela Tarrance
+                        ANGELA TARRANCE
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink tag={RRNavLink} to = "/homessold">Homes Sold</NavLink>
+                            <NavLink className="middle" tag={RRNavLink} to = "/homessold">HOMES SOLD</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={RRNavLink} to = "/testimonials">Testimonials</NavLink>
+                            <NavLink className="middle" tag={RRNavLink} to = "/testimonials">TESTIMONIALS</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={RRNavLink} to = "/recognition">Recognition</NavLink>
+                            <NavLink className="middle" tag={RRNavLink} to = "/recognition">RECOGNITION</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={RRNavLink} to = "/angela">Angela</NavLink>
+                            <NavLink className="middle" tag={RRNavLink} to = "/angela">ANGELA</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={RRNavLink} to = "/contactme">Contact Me</NavLink>
+                            <NavLink className="middle" tag={RRNavLink} to = "/contactme">CONTACT ME</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

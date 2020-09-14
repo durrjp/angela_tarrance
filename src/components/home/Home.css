@@ -46,7 +46,8 @@
     margin-left: 2em;
     font-size: 1.3em;
     margin: 2em;
-    color: white
+    color: white;
+    text-align: left
 }
 
 .collapse-container {

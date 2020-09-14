@@ -6,9 +6,11 @@ import Header from './components/header/Header';
 
 export default function App() {
   return (
-    <Router>
-      <ApplicationViews />
-    </Router>
+    <main className="App">
+      <Router>
+        <ApplicationViews />
+      </Router>
+    </main>
   );
 }
 
