@@ -2,3 +2,15 @@
     display:flex !important;
     justify-content: center !important;
 }
+
+.sendmessage-button {
+    border: white 2px solid !important;
+    background: none !important;
+    transition: all .5s ease;
+}
+
+.sendmessage-button:hover {
+    border: white 2px solid !important;
+    background: none !important;
+    transform: scale(1.2)
+}

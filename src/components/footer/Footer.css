@@ -1,10 +1,13 @@
 .footer-container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     width: 100%;
     text-align: center;
-    background: linear-gradient(330deg, #111111 70%, rgb(214, 214, 214) );
+    background: linear-gradient(330deg, rgba(4, 3, 77) 70%, rgb(214, 214, 214) );
     color: white;
+    height: auto;
+    padding: 1em
 }
 
 

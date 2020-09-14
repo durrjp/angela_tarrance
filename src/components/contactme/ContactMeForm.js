@@ -7,11 +7,11 @@ export default function ContactMeForm() {
         <>
         <div className="contactform-container">
             <div className="container pt-5">
-                <p>I would love to connect. Send me a message and I will respond via email</p>
+                <h2>Send me a message!</h2>
                 <Form>
                     <fieldset>
                         <Row>
-                            <Col md={4}>
+                            <Col md={6}>
                                 <FormGroup>
                                     <Label>Name</Label>
                                     <Input
@@ -19,7 +19,7 @@ export default function ContactMeForm() {
                                     />
                                 </FormGroup>
                             </Col>
-                            <Col md={4}>
+                            <Col md={6}>
                                 <FormGroup>
                                     <Label>Email</Label>
                                     <Input 
@@ -29,7 +29,7 @@ export default function ContactMeForm() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col md={8}>
+                            <Col md={12}>
                                 <FormGroup>
                                     <Label>Message</Label>
                                     <Input 
@@ -39,7 +39,7 @@ export default function ContactMeForm() {
                             </Col>
                         </Row>
                     </fieldset>
-                    <Button>Send</Button>
+                    <Button className="sendmessage-button">Send</Button>
                 </Form>
             </div>
         </div>

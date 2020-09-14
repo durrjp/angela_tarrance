@@ -44,13 +44,8 @@ export default function Home() {
                         </div>
                     </Fade>
                 </div>
-            <div className="collapse-container">
-                <Button className="contactme-button" onClick={toggle}>Message Me</Button>
+        
             </div>
-            </div>
-                <Collapse isOpen={isOpen}>
-                    <ContactMeForm />
-                </Collapse>
             <Footer />
         </>
     )
