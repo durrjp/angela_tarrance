@@ -1,13 +1,11 @@
 import React from "react"
 import Footer from "../footer/Footer"
 import Header from "../header/Header"
-import ContactMeForm from "./ContactMeForm"
 
-export default function ContactMe() {
+export default function Recognition() {
     return (
         <>
             <Header />
-            <ContactMeForm />
             <Footer />
         </>
     )

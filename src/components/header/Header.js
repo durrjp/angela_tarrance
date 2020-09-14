@@ -11,8 +11,7 @@ export default function Header() {
         <div className="header-container">
             <Navbar dark expand="md">
                 <NavbarBrand tag={RRNavLink} to = "/">
-                        Angela
-                        Tarrance
+                        Angela Tarrance
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
@@ -22,6 +21,9 @@ export default function Header() {
                         </NavItem>
                         <NavItem>
                             <NavLink tag={RRNavLink} to = "/testimonials">Testimonials</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink tag={RRNavLink} to = "/recognition">Recognition</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink tag={RRNavLink} to = "/angela">Angela</NavLink>

@@ -19,12 +19,17 @@
 
 .personal-profile-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     background-image:linear-gradient( rgba(72, 72, 77, 0.9), rgba(0, 0, 0, 0.5) ), url("../../images/NashvilleSkyline3.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     justify-content: center;
     height: auto
+}
+
+.pp-top-container {
+    display:flex;
+    flex-flow: row wrap;
 }
 
 .angela-img-container {
@@ -42,4 +47,21 @@
     font-size: 1.3em;
     margin: 2em;
     color: white
+}
+
+.collapse-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.contactme-button {
+    margin: 1em;
+    margin-left: 4em;
+    width: 20%;
+    height: 75px;
+    font-size: 30px !important;
+    font-weight: bolder !important;
+    border-radius: 5px !important;
+
 }
