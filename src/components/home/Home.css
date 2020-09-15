@@ -17,9 +17,9 @@
 }
 
 .carousel-title {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.801);
     color: rgb(255, 255, 255);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poiret One', cursive;
     font-size: 100px;
 }
 
@@ -68,10 +68,52 @@
     text-align: left
 }
 
-.collapse-container {
+.people-are-talking {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+.pat-title {
+    width: 100%;
+    text-align: center;
+    margin-left: 2em
+}
+
+.snippets-container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     justify-content: center;
+    align-items: center
+}
+
+.snippet-item {
+    width: 300px;
+    display: inline-grid;
+    height: 80px;
+    margin-left: 1em;
+    margin-right: 1em;
+    background: rgba(255, 255, 255, 0.787);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    align-items: center;
+    padding: .1em;
+    justify-content: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.561)
+}
+
+.readmore-button {
+    height: 50px;
+    background: none !important;
+    border: 2px solid white !important;
+    border-radius: 5px;
+    transition: .2s ease-in
+}
+
+.readmore-button:hover {
+    transform: scale(1.2)
 }
 
 .contactme-button {
@@ -85,12 +127,14 @@
     font-weight: bolder !important;
     border: 2px solid white !important;
     border-radius: 5px !important;
+    transition: .2s ease-in
 }
 
 .learnmore-button {
     background: none !important;
     border: 2px solid white !important;
     border-radius: 5px;
+    transition: .2s ease-in
 }
 
 .learnmore-button:hover {
@@ -127,6 +171,19 @@
 .community-title {
     font-size: 22px;
     font-family: 'Raleway', sans-serif;
+}
+
+
+.ashton-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold
+}
+
+.ashton-link:hover {
+    text-decoration: none;
+    color: rgb(147, 233, 255);
+    font-weight: bold
 }
 
 

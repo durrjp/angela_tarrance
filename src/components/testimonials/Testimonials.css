@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     font-family: 'Raleway', sans-serif;
+    background-color: rgba(240, 248, 255, 0.315);
 }
 
 .testimonialtop-background {
@@ -16,6 +17,8 @@
     display: flex;
     flex-flow: row wrap;
     margin: 2em;
+    justify-content: space-evenly;
+   
 }
 
 .text-container {
@@ -25,20 +28,19 @@
 }
 
 .angelapic-container {
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }
 
 .angela-image-container2 {
     background-image:  url("../../images/AngelaPicture2.jpg");
-    width: 580px;
+    width: 500px;
     height: 880px;
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 5px;
-    margin-left: 2em;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 .testimonial-giver {
@@ -46,17 +48,19 @@
 }
 
 .testimonial-item {
-    background-color: rgba(18, 183, 212, 0.274);
+    background-color: rgb(240, 240, 240);
     padding: 1em;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.336);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 .externalreviews-container {
-    
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .zillow-container {
     display: flex;
+    flex-flow: column nowrap;
     margin: 2em;
 }
 
@@ -67,17 +71,16 @@
     font-size: 20px !important;
     font-weight: bold;
     border-radius: 5px;
-    margin-left: 2em;
     padding: .5em;
     text-decoration: none !important;
     transition: .2s ease-in
 }
 
 .zillow-button:hover {
-    background: rgb(15, 12, 184) !important;
-    color: white !important;
-    font-size: 20px !important;
-    border-radius: 5px;
-    margin-left: 2em;
-    text-decoration: none !important;
+    transform: scale(1.2)
+}
+
+.callout {
+    font-weight: bolder;
+    font-size: 23px;
 }

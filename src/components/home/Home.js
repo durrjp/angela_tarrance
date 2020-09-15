@@ -16,6 +16,10 @@ export default function Home() {
         history.push(`/angela`);
     }
 
+    const handleTestimonialClick = () => {
+        history.push(`/testimonials`);
+    }
+
     return (
         <>
             <div className="carousel-overlay">
@@ -36,7 +40,9 @@ export default function Home() {
                     <Fade up>
                         <div className="angela-profiletext-container">
                             <h1>Angela Tarrance</h1>
-                            <p style={{textAlign: "left"}}>Angela is the Director of Luxury Home Sales for RE/MAX Advantage in downtown Nashville TN.
+                            <p style={{textAlign: "left"}}>Angela is the Director of Luxury Home Sales for 
+                                 <a className="ashton-link" target="_blank" href="https://www.remax.com/real-estate-teams/the-ashton-real-estate-group-nashville-tn/101892914"> The Ashton Real Estate Group </a>
+                                  in downtown Nashville TN.
                                 She helps clients of all price points but specializes in the luxury market. She comes to real
                                 estate with a background in corporate finance with a Fortune 50 company and uses her
                                 business acumen to negotiate the best deal for her buyers and sellers. Angela is enthusiastic
@@ -50,53 +56,69 @@ export default function Home() {
                         </div>
                     </Fade>
                 </div>
+                    <div className="people-are-talking">
+                        <div className="pat-title">
+                        </div>
+                        <div className="snippets-container">
+                            <h1>Why work with Angela?</h1>
+                            <div className="snippet-item">''Delivered on all promises''</div>
+                            <div className="snippet-item">''helped me save over $10,000''</div>
+                            <div className="snippet-item">''knowledgeable, professional, and fun to be with''</div>
+                        <Button onClick={e => {
+                                e.preventDefault()
+                                handleTestimonialClick()
+                            } } className="readmore-button">Read More</Button>
+                        </div>
+                    </div>
             </div>
             <div className="communities-section-container">
                 <div className="communities-title">
                     <h1>Nashville Communites</h1>
                 </div>
-                <div className="communities">
-                    <div className="community-item">
-                        <div className="community Arrington" />
-                        <p className="community-title">Arrington</p>
+                <Fade up>
+                    <div className="communities">
+                        <div className="community-item">
+                            <div className="community Arrington" />
+                            <p className="community-title">Arrington</p>
+                        </div>
+                        <div className="community-item">
+                            <div className="community Brentwood" />
+                            <p className="community-title">Brentwood</p>
+                        </div>
+                        <div className="community-item">
+                            <div className="community CollegeGrove" />
+                            <p className="community-title">College Grove</p>
+                        </div>
+                        <div className="community-item">
+                            <div className="community Franklin" />
+                            <p className="community-title">Franklin</p>
+                        </div>
+                        <div className="community-item">
+                            <div className="community MountJuliet" />
+                            <p className="community-title">Mount Juliet</p>
+                        </div>
+                        <div className="community-item">
+                            <div className="community Murfreesboro" />
+                            <p className="community-title">Murfreesboro</p>
+                        </div>
+                        <div className="community-item">
+                            <div className="community Nashville" />
+                            <p className="community-title">Nashville</p>
+                        </div>
+                        <div className="community-item">
+                            <div className="community Nolensville" />
+                            <p className="community-title">Nolensville</p>
+                        </div>
+                        <div className="community-item">
+                            <div className="community SpringHill" />
+                            <p className="community-title">Spring Hill</p>
+                        </div>
+                        <div className="community-item">
+                            <div className="community ThompsonStation" />
+                            <p className="community-title">Thompson Station</p>
+                        </div>
                     </div>
-                    <div className="community-item">
-                        <div className="community Brentwood" />
-                        <p className="community-title">Brentwood</p>
-                    </div>
-                    <div className="community-item">
-                        <div className="community CollegeGrove" />
-                        <p className="community-title">College Grove</p>
-                    </div>
-                    <div className="community-item">
-                        <div className="community Franklin" />
-                        <p className="community-title">Franklin</p>
-                    </div>
-                    <div className="community-item">
-                        <div className="community MountJuliet" />
-                        <p className="community-title">Mount Juliet</p>
-                    </div>
-                    <div className="community-item">
-                        <div className="community Murfreesboro" />
-                        <p className="community-title">Murfreesboro</p>
-                    </div>
-                    <div className="community-item">
-                        <div className="community Nashville" />
-                        <p className="community-title">Nashville</p>
-                    </div>
-                    <div className="community-item">
-                        <div className="community Nolensville" />
-                        <p className="community-title">Nolensville</p>
-                    </div>
-                    <div className="community-item">
-                        <div className="community SpringHill" />
-                        <p className="community-title">Spring Hill</p>
-                    </div>
-                    <div className="community-item">
-                        <div className="community ThompsonStation" />
-                        <p className="community-title">Thompson Station</p>
-                    </div>
-                </div>
+                </Fade>
             </div>
             <Footer />
         </>
