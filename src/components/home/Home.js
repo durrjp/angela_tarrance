@@ -50,7 +50,53 @@ export default function Home() {
                         </div>
                     </Fade>
                 </div>
-        
+            </div>
+            <div className="communities-section-container">
+                <div className="communities-title">
+                    <h1>Nashville Communites</h1>
+                </div>
+                <div className="communities">
+                    <div className="community-item">
+                        <div className="community Arrington" />
+                        <p className="community-title">Arrington</p>
+                    </div>
+                    <div className="community-item">
+                        <div className="community Brentwood" />
+                        <p className="community-title">Brentwood</p>
+                    </div>
+                    <div className="community-item">
+                        <div className="community CollegeGrove" />
+                        <p className="community-title">College Grove</p>
+                    </div>
+                    <div className="community-item">
+                        <div className="community Franklin" />
+                        <p className="community-title">Franklin</p>
+                    </div>
+                    <div className="community-item">
+                        <div className="community MountJuliet" />
+                        <p className="community-title">Mount Juliet</p>
+                    </div>
+                    <div className="community-item">
+                        <div className="community Murfreesboro" />
+                        <p className="community-title">Murfreesboro</p>
+                    </div>
+                    <div className="community-item">
+                        <div className="community Nashville" />
+                        <p className="community-title">Nashville</p>
+                    </div>
+                    <div className="community-item">
+                        <div className="community Nolensville" />
+                        <p className="community-title">Nolensville</p>
+                    </div>
+                    <div className="community-item">
+                        <div className="community SpringHill" />
+                        <p className="community-title">Spring Hill</p>
+                    </div>
+                    <div className="community-item">
+                        <div className="community ThompsonStation" />
+                        <p className="community-title">Thompson Station</p>
+                    </div>
+                </div>
             </div>
             <Footer />
         </>

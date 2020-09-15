@@ -1,6 +1,7 @@
 .testimonial-page-container {
     display: flex;
-    flex-flow: column nowrap
+    flex-flow: column nowrap;
+    font-family: 'Raleway', sans-serif;
 }
 
 .testimonialtop-background {
@@ -19,11 +20,15 @@
 
 .text-container {
     width: 900px;
-    text-align: left
+    text-align: left;
+    font-size: 20px;
 }
 
 .angelapic-container {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .angela-image-container2 {
@@ -45,4 +50,34 @@
     padding: 1em;
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.336);
+}
+.externalreviews-container {
+    
+}
+
+.zillow-container {
+    display: flex;
+    margin: 2em;
+}
+
+.zillow-button {
+    background: none !important;
+    border: 4px solid rgb(15, 12, 184) !important;
+    color: rgb(15, 12, 184) !important;
+    font-size: 20px !important;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 2em;
+    padding: .5em;
+    text-decoration: none !important;
+    transition: .2s ease-in
+}
+
+.zillow-button:hover {
+    background: rgb(15, 12, 184) !important;
+    color: white !important;
+    font-size: 20px !important;
+    border-radius: 5px;
+    margin-left: 2em;
+    text-decoration: none !important;
 }

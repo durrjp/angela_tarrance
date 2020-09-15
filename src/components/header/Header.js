@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { NavLink as RRNavLink } from "react-router-dom";
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from "reactstrap"
 import "./Header.css"
+import Ashton from "../../images/AshtonRealEstate.jpg"
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,8 @@ export default function Header() {
         style={{ transition: '.5s ease' }}>
             <Navbar dark expand="md">
                 <NavbarBrand tag={RRNavLink} to = "/">
-                        ANGELA TARRANCE
+                        ANGELA TARRANCE&nbsp;&nbsp;&nbsp;
+                        <img width="50px" src={Ashton} />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>

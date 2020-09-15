@@ -1,19 +1,24 @@
 .header-container-black {
     position: fixed !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     z-index: 1;
     width: 100%;
     text-shadow: rgba(36, 35, 35, 0.486)  1px 1px 3px !important;
     color: white !important;
-    font-size: 20px;
-    background-color: rgba(4, 3, 77, 0.808) !important
+    font-size: 17px;
+    background-color: rgba(4, 3, 77, 0.808) !important;
+    
 }
 .header-container-clear {
     position: fixed !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     z-index: 1;
     width: 100%;
     text-shadow: rgba(36, 35, 35, 0.486)  1px 1px 3px !important;
     color: white !important;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .navItem {
@@ -41,4 +46,5 @@
     visibility: visible;
     transform: scaleX(1);
 }
+
 

@@ -59,6 +59,7 @@
 }
 
 .angela-profiletext-container {
+    font-family: 'Raleway', sans-serif;
     width: 700px;
     margin-left: 2em;
     font-size: 1.3em;
@@ -90,4 +91,124 @@
     background: none !important;
     border: 2px solid white !important;
     border-radius: 5px;
+}
+
+.learnmore-button:hover {
+    transform: scale(1.2)
+}
+
+.communities-section-container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 5em;
+    margin-right: 5em
+}
+
+.communities-title {
+    margin-top: 3em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.communities {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.community {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 1em
+}
+
+
+.community-title {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* Communities */
+
+.Arrington {
+    background-image: url("../../images/communities/Arrington.jpg");
+}
+
+.Arrington:hover {
+    transform: scale(1.1);
+}
+
+.Brentwood {
+    background-image: url("../../images/communities/Brentwood.jpg");
+}
+
+.Brentwood:hover {
+    transform: scale(1.1);
+}
+
+.CollegeGrove {
+    background-image: url("../../images/communities/CollegeGrove.jpg");
+}
+
+.CollegeGrove:hover {
+    transform: scale(1.1);
+}
+
+.Franklin {
+    background-image: url("../../images/communities/Franklin.jpg");
+}
+
+.Franklin:hover {
+    transform: scale(1.1);
+}
+
+.MountJuliet {
+    background-image: url("../../images/communities/MountJuliet.jpg");
+}
+
+.MountJuliet:hover {
+    transform: scale(1.1);
+}
+
+.Murfreesboro {
+    background-image: url("../../images/communities/Murfreesboro.jpg");
+}
+
+.Murfreesboro:hover {
+    transform: scale(1.1);
+}
+
+.Nashville {
+    background-image: url("../../images/communities/Nashville.jpg");
+}
+
+.Nashville:hover {
+    transform: scale(1.1);
+}
+
+.Nolensville {
+    background-image: url("../../images/communities/Nolensville.jpg");
+}
+
+.Nolensville:hover {
+    transform: scale(1.1);
+}
+
+.SpringHill {
+    background-image: url("../../images/communities/SpringHill.jpg");
+}
+
+.SpringHill:hover {
+    transform: scale(1.1);
+}
+
+.ThompsonStation {
+    background-image: url("../../images/communities/ThompsonStation.jpg");
+}
+
+.ThompsonStation:hover {
+    transform: scale(1.1);
 }

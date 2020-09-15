@@ -4,6 +4,7 @@ import Header from "../header/Header"
 import "./Testimonials.css"
 import Fade from 'react-reveal/Fade';
 import Iframe from 'react-iframe'
+import { Button } from "reactstrap";
 
 export default function Testimonials() {
     return (
@@ -97,9 +98,17 @@ export default function Testimonials() {
                     <Fade bottom>
                         <div className="angela-image-container2" />
                     </Fade>
+                    <div className="externalreviews-container">
+                        <div className="zillow-container">
+                            <h2>Zillow Reviews (&#9733;&#9733;&#9733;&#9733;&#9733;)</h2>
+                            <a href="https://www.zillow.com/profile/AngelaTarrance/rental-manager/resources/" target="_blank" className="zillow-button">Open Zillow</a>
+                        </div>
+                        <div className="zillow-container">
+                            <h2>Facebook Reviews (&#9733;&#9733;&#9733;&#9733;&#9733;)</h2>
+                            <a href="https://www.facebook.com/AngelaDurrREMAX/reviews/" target="_blank" className="zillow-button">Open Facebook</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="iframes-container">
             </div>
         </div>
         <Footer />

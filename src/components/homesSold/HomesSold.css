@@ -10,11 +10,13 @@
     text-align: center;
     padding-top: 3em;
     color: white;
-    font-size: 4em
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
 }
 
 .cards-container {
-    margin: 2em
+    margin: 2em;
+    font-family: 'Raleway', sans-serif;
 }
 
 .home-card {
