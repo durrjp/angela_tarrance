@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 import { NavLink as RRNavLink } from "react-router-dom";
-import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from "reactstrap"
+import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from "reactstrap"
 import "./Header.css"
 
 export default function Header() {
@@ -53,9 +53,22 @@ export default function Header() {
                         <NavItem>
                             <NavLink className="middle" tag={RRNavLink} to = "/angela">ANGELA</NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink className="middle" tag={RRNavLink} to = "/contactme">CONTACT ME</NavLink>
-                        </NavItem>
+                        <UncontrolledDropdown className="middle" nav inNavbar>
+                            <DropdownToggle nav caret>
+                                CONTACT ME
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                <DropdownItem>
+                                (615) 627-8779
+                                </DropdownItem>
+                                <DropdownItem>
+                                    angelahdurr@aol.com
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <a href="https://www.nashvillesmls.com/angela-durr-clients.php" target="_blank">Client Registration</a>
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
                     </Nav>
                 </Collapse>
             </Navbar>

@@ -13,9 +13,9 @@ export default function Footer() {
                         <p className="footer-subitem">angelahdurr@aol.com</p>
                     </div>
                     <div className="social-container">
-                        <p className="footer-subitem">Facebook</p>
-                        <p className="footer-subitem">Instagram</p>
-                        <p className="footer-subitem">LinkedIn</p>
+                        <p className="footer-subitem"><a href="https://www.facebook.com/angela.h.durr" target="_blank">Facebook</a></p>
+                        <p className="footer-subitem"><a href="https://www.instagram.com/angeladurrtarrance/" target="_blank">Instagram</a></p>
+                        <p className="footer-subitem"><a href="https://www.linkedin.com/in/angela-durr-tarrance-a882bb6b/" target="_blank">LinkedIn</a></p>
                     </div>
                     <div className="remax-logo-container">
                         <div className="remax-logo" />

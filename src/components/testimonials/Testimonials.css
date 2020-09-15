@@ -1,0 +1,48 @@
+.testimonial-page-container {
+    display: flex;
+    flex-flow: column nowrap
+}
+
+.testimonialtop-background {
+    background-image:linear-gradient( rgba(72, 72, 77, 0.9), rgba(0, 0, 0, 0.5) ), url("../../images/NashvilleSkyline2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    height: 500px
+}
+
+.testimonials-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2em;
+}
+
+.text-container {
+    width: 900px;
+    text-align: left
+}
+
+.angelapic-container {
+    text-align: center;
+}
+
+.angela-image-container2 {
+    background-image:  url("../../images/AngelaPicture2.jpg");
+    width: 580px;
+    height: 880px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-left: 2em;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
+}
+
+.testimonial-giver {
+    font-weight: bold;
+}
+
+.testimonial-item {
+    background-color: rgba(18, 183, 212, 0.274);
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.336);
+}
