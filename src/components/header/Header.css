@@ -7,7 +7,7 @@
     text-shadow: rgba(36, 35, 35, 0.486)  1px 1px 3px !important;
     color: white !important;
     font-size: 17px;
-    background-color: rgba(4, 3, 77, 0.808) !important;
+    background-color: rgb(25, 54, 104.85, .85) !important;
     
 }
 .header-container-clear {
@@ -23,6 +23,16 @@
 
 .navItem {
     color: white !important
+}
+
+.navbar-style {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.navbar-style2 {
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .middle

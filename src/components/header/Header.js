@@ -8,6 +8,7 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const [navBackground, setNavBackground] = useState("header-container-clear")
+    const [navStyle, setNavStyle] = useState("light")
     const [scroll, setScroll] = useState(1)
     const navRef = useRef()
     useEffect(() => {
@@ -16,6 +17,7 @@ export default function Header() {
             if (scrollCheck !== scroll) {
                 setScroll(scrollCheck)
                 setNavBackground("header-container-clear")
+                setNavStyle("dark")
             }
             else {
               setNavBackground("header-container-black")
@@ -27,16 +29,16 @@ export default function Header() {
         return () => {
             document.removeEventListener("scroll", onScroll)
         }
-      }, [scroll, setScroll])
-      
+    }, [scroll, setScroll])
+    
       
 
     return (
         <>
         <div ref={navRef} className={navBackground}
         style={{ transition: '.5s ease' }}>
-            <Navbar dark expand="md">
-                <NavbarBrand tag={RRNavLink} to = "/">
+            <Navbar expand="md">
+                <NavbarBrand className="navbar-style" tag={RRNavLink} to = "/">
                         ANGELA TARRANCE&nbsp;&nbsp;&nbsp;
                         <img width="50px" src={Ashton} />
                 </NavbarBrand>
@@ -44,19 +46,19 @@ export default function Header() {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink className="middle" tag={RRNavLink} to = "/homessold">HOMES SOLD</NavLink>
+                            <NavLink className="navbar-style middle" tag={RRNavLink} to = "/homessold">HOMES SOLD</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="middle" tag={RRNavLink} to = "/testimonials">TESTIMONIALS</NavLink>
+                            <NavLink className="navbar-style middle" tag={RRNavLink} to = "/testimonials">TESTIMONIALS</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="middle" tag={RRNavLink} to = "/recognition">RECOGNITION</NavLink>
+                            <NavLink className="navbar-style middle" tag={RRNavLink} to = "/recognition">RECOGNITION</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="middle" tag={RRNavLink} to = "/angela">ANGELA</NavLink>
+                            <NavLink className="navbar-style middle" tag={RRNavLink} to = "/angela">ANGELA</NavLink>
                         </NavItem>
                         <UncontrolledDropdown className="middle" nav inNavbar>
-                            <DropdownToggle nav caret>
+                            <DropdownToggle className="navbar-style" nav caret>
                                 CONTACT ME
                             </DropdownToggle>
                             <DropdownMenu right>
