@@ -1,6 +1,36 @@
-.angela-section1-container {
+.angela-container {
     background-image:linear-gradient( rgba(226, 226, 226, 0.849), rgba(8, 9, 80, 0.9) ),  url("../../images/AngelaPicture2.jpg");
     width: 100%;
     height: 880px;
+    background-repeat: no-repeat;
+    padding: 2em 
+}
+
+.angela-family-container {
+    padding-top: 4em;
+}
+
+.angela-service-container {
+    border: solid white 2px
+}
+
+.service-subcontainer1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.service-text {
+    width: 500px;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+.alzassoc-image {
+    background-image: url("../../images/alzheimers-association-vector-logo.svg");
+    width: 500px;
+    height: 400px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
