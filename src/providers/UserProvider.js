@@ -9,6 +9,7 @@ export const UserContext = createContext();
 export default function UserProvider(props) {
     const user = JSON.parse(sessionStorage.getItem("user"));
     const [isLoggedIn, setIsLoggedIn] = useState(user != null);
+    const db = firebase.firestore()
     
     const [isFirebaseReady, setIsFirebaseReady] = useState(false);
 
@@ -23,7 +24,7 @@ export default function UserProvider(props) {
           .auth()
           .signInWithEmailAndPassword(email, pw)
           .then((signInResponse) => {
-              var docRef= firebase.firestore().doc(`users/${signInResponse.user.uid}`)
+              var docRef= db.doc(`users/${signInResponse.user.uid}`)
               return docRef.get()
           })
           .then((userProfile) => {
