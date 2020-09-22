@@ -1,23 +1,24 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useContext, useEffect, useRef, useState } from "react"
 import { NavLink as RRNavLink } from "react-router-dom";
 import { Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown } from "reactstrap"
 import "./Header.css"
 import Ashton from "../../images/AshtonRealEstate.jpg"
+import { UserContext } from "../../providers/UserProvider";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const [navBackground, setNavBackground] = useState("header-container-clear")
-    const [navStyle, setNavStyle] = useState("light")
     const [scroll, setScroll] = useState(1)
     const navRef = useRef()
+    const {isLoggedIn, logout} = useContext(UserContext)
+
     useEffect(() => {
         const onScroll = () => {
             const scrollCheck = window.scrollY > 0
             if (scrollCheck !== scroll) {
                 setScroll(scrollCheck)
                 setNavBackground("header-container-clear")
-                setNavStyle("dark")
             }
             else {
               setNavBackground("header-container-black")
@@ -70,9 +71,16 @@ export default function Header() {
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
-                        <NavItem>
-                            <NavLink className="navbar-style middle" tag={RRNavLink} to = "/login">Login</NavLink>
-                        </NavItem>
+                        {isLoggedIn 
+                        ?
+                            <NavItem>
+                                <NavLink onClick={logout} className="navbar-style middle" tag={RRNavLink} to = "/">Logout</NavLink>
+                            </NavItem>
+                        :
+                            <NavItem>
+                                <NavLink className="navbar-style middle" tag={RRNavLink} to = "/login">Login</NavLink>
+                            </NavItem>
+                        }
                     </Nav>
                 </Collapse>
             </Navbar>

@@ -2,7 +2,6 @@ import React, { useState, useEffect, createContext } from "react";
 import { Spinner } from "reactstrap";
 import * as firebase from "firebase/app";
 import "firebase/auth";
-import {db} from "../index"
 
 export const UserContext = createContext();
 
@@ -24,13 +23,11 @@ export default function UserProvider(props) {
           .auth()
           .signInWithEmailAndPassword(email, pw)
           .then((signInResponse) => {
-              debugger
               var docRef= firebase.firestore().doc(`users/${signInResponse.user.uid}`)
               return docRef.get()
           })
           .then((userProfile) => {
-            debugger
-            sessionStorage.setItem("user", JSON.stringify(userProfile.data));
+            sessionStorage.setItem("user", JSON.stringify(userProfile.data()));
             setIsLoggedIn(true);
           });
     };
@@ -46,12 +43,6 @@ export default function UserProvider(props) {
     };
 
     const getToken = () => firebase.auth().currentUser.getIdToken();
-
-    // const getUserProfile = (firebaseUserId) => {
-    //     return db.collection('users')
-    //         .doc(firebaseUserId)
-    //         .get()        
-    // };
 
     return (
         <UserContext.Provider

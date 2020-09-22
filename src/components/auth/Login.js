@@ -7,7 +7,6 @@ import "./Login.css"
 export default function Login() {
   const history = useHistory();
   const { login } = useContext(UserContext);
-
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 

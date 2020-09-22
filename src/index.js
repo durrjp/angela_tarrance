@@ -19,7 +19,6 @@ const firebaseConfig = {
   measurementId: "G-5ZCW6GJ0FS"
 };
 firebase.initializeApp(firebaseConfig);
-export const db = firebase.firestore();
 
 
 ReactDOM.render(
