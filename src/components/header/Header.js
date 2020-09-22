@@ -68,9 +68,6 @@ export default function Header() {
                                 <DropdownItem>
                                     angelahdurr@aol.com
                                 </DropdownItem>
-                                <DropdownItem>
-                                    <a href="https://www.nashvillesmls.com/angela-durr-clients.php" target="_blank">Client Registration</a>
-                                </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
