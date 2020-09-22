@@ -70,6 +70,9 @@ export default function Header() {
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
+                        <NavItem>
+                            <NavLink className="navbar-style middle" tag={RRNavLink} to = "/login">Login</NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </Navbar>

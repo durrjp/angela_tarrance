@@ -1,6 +1,7 @@
 import React from "react"
 import { Route, Switch } from "react-router-dom"
 import Angela from "./angela/Angela"
+import Login from "./auth/Login"
 import ContactMe from "./contactme/ContactMe"
 import Home from "./home/Home"
 import HomesSold from "./homesSold/HomesSold"
@@ -14,6 +15,9 @@ export default function ApplicationViews() {
             <Switch>
                 <Route path="/" exact>
                     <Home />
+                </Route>
+                <Route path="/login" exact>
+                    <Login />
                 </Route>
                 <Route path="/homessold" exact>
                     <HomesSold />
