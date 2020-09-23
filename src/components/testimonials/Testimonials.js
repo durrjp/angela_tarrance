@@ -15,6 +15,21 @@ export default function Testimonials() {
                 <h4 className="featuredhomes-title">Testimonials</h4>
             </div>
             <div className="testimonials-container">
+                <div className="angelapic-container">
+                        <Fade bottom>
+                            <div className="angela-image-container2" />
+                        </Fade>
+                        <div className="externalreviews-container">
+                            <div className="zillow-container">
+                                <h2>Zillow Reviews (&#9733;&#9733;&#9733;&#9733;&#9733;)</h2>
+                                <a href="https://www.zillow.com/profile/AngelaTarrance/rental-manager/resources/" target="_blank" className="zillow-button">Open Zillow</a>
+                            </div>
+                            <div className="zillow-container">
+                                <h2>Facebook Reviews (&#9733;&#9733;&#9733;&#9733;&#9733;)</h2>
+                                <a href="https://www.facebook.com/AngelaDurrREMAX/reviews/" target="_blank" className="zillow-button">Open Facebook</a>
+                            </div>
+                        </div>
+                </div>
                 <div className="text-container">
                     <Fade up>
                         <p className="testimonial-item">
@@ -94,21 +109,7 @@ export default function Testimonials() {
                         </p>
                     </Fade>
                 </div>
-                <div className="angelapic-container">
-                    <Fade bottom>
-                        <div className="angela-image-container2" />
-                    </Fade>
-                    <div className="externalreviews-container">
-                        <div className="zillow-container">
-                            <h2>Zillow Reviews (&#9733;&#9733;&#9733;&#9733;&#9733;)</h2>
-                            <a href="https://www.zillow.com/profile/AngelaTarrance/rental-manager/resources/" target="_blank" className="zillow-button">Open Zillow</a>
-                        </div>
-                        <div className="zillow-container">
-                            <h2>Facebook Reviews (&#9733;&#9733;&#9733;&#9733;&#9733;)</h2>
-                            <a href="https://www.facebook.com/AngelaDurrREMAX/reviews/" target="_blank" className="zillow-button">Open Facebook</a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <Footer />

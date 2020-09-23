@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     font-family: 'Raleway', sans-serif;
-    background-color: rgba(83, 166, 238, 0.315);
+    background-color: rgb(58, 58, 58);
 }
 
 .testimonialtop-background {
@@ -62,12 +62,13 @@
     display: flex;
     flex-flow: column nowrap;
     margin: 2em;
+    color: white
 }
 
 .zillow-button {
     background: none !important;
-    border: 4px solid rgb(15, 12, 184) !important;
-    color: rgb(15, 12, 184) !important;
+    border: 4px solid rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) !important;
     font-size: 20px !important;
     font-weight: bold;
     border-radius: 5px;
