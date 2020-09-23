@@ -1,5 +1,8 @@
 import React, {useState} from "react"
 import {Modal, Button, ModalHeader, ModalBody, Form, FormGroup, Label, Input, Row, Col} from "reactstrap"
+import * as firebase from "firebase/app";
+import 'firebase/auth'
+import 'firebase/storage'
 
 export default function AddHomeForm({toggle, modal}) {
     const [city, setCity] = useState()
@@ -10,6 +13,16 @@ export default function AddHomeForm({toggle, modal}) {
     const [state, setState] = useState()
     const [street, setStreet] = useState()
     const [zipCode, setZipCode] = useState()
+    const [imageFileName, setImageFileName] = useState();
+
+    const storage = firebase.storage().ref()
+    const storeImage = (event) => {
+        const file = event.target.files[0]
+        const homeImagesRef = storage.child(`homeimages/${event.target.value}`)
+        if(file) {
+            storage.put(file)
+        }
+    }
 
     return (
         <>
@@ -82,6 +95,17 @@ export default function AddHomeForm({toggle, modal}) {
                             </FormGroup>
                         </Col>
                     </Row>
+                    <FormGroup>
+                        <Label>Images</Label>
+                        <Input
+                            type="file"
+                            name="image"
+                            onChange={(e) => {
+                                setImageFileName(e.target.value)
+                                storeImage(e)
+                            }}
+                        />
+                    </FormGroup>
                     <FormGroup>
                         <Label for="description">Description</Label>
                         <Input 

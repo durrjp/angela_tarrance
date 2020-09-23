@@ -16,7 +16,7 @@ const firebaseConfig = {
   storageBucket: "angelatarrance-25ce6.appspot.com",
   messagingSenderId: "768665878880",
   appId: "1:768665878880:web:0b9ffaa6658adbc9109e05",
-  measurementId: "G-5ZCW6GJ0FS"
+  measurementId: "G-5ZCW6GJ0FS",
 };
 firebase.initializeApp(firebaseConfig);
 
