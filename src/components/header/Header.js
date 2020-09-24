@@ -47,7 +47,7 @@ export default function Header() {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink className="navbar-style middle" tag={RRNavLink} to = "/homessold">HOMES SOLD</NavLink>
+                            <NavLink className="navbar-style middle" tag={RRNavLink} to = "/homessold">FEATURED HOMES</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className="navbar-style middle" tag={RRNavLink} to = "/testimonials">TESTIMONIALS</NavLink>
