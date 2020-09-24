@@ -18,7 +18,6 @@ export default function HomesSold() {
     const {isLoggedIn} = useContext(UserContext)
     const history = useHistory();
     const [modal, setModal] = useState(false)
-    const [homeIURLS, setHomeIUrls] = useState([])
     
     useEffect(() => {
         getHomes()
@@ -27,7 +26,10 @@ export default function HomesSold() {
     const toggle = () => {
         setModal(!modal)
     }
-    
+
+    const refreshHomes = () => {
+        getHomes()
+    }
     return (
         <>
         <Header />
@@ -66,7 +68,7 @@ export default function HomesSold() {
             </Fade>
         </div>
         <Footer />
-        <AddHomeForm toggle={toggle} modal={modal} />
+        <AddHomeForm toggle={toggle} modal={modal} refreshHomes={refreshHomes} />
         </>
     )
 }

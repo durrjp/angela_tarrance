@@ -5,7 +5,7 @@ import 'firebase/auth'
 import 'firebase/storage'
 import { HomeContext } from "../../providers/HomeProvider";
 
-export default function AddHomeForm({toggle, modal}) {
+export default function AddHomeForm({toggle, modal, refreshHomes}) {
     const {addHome} = useContext(HomeContext)
     const [city, setCity] = useState()
     const [description, setDescription] = useState()
@@ -27,13 +27,13 @@ export default function AddHomeForm({toggle, modal}) {
     }
 
     const storeHome = () => {
-        const forSaleVar = ""
+        let forSaleVar = ""
         if(forSale === 1) {
             forSaleVar = true
         } else {
             forSaleVar = false
         }
-        
+
         const homeObj = {
             City: city,
             Description: description,
@@ -44,7 +44,7 @@ export default function AddHomeForm({toggle, modal}) {
             ZipCode: zipCode,
             Image: imageFileName
         }
-        addHome(homeObj)
+        addHome(homeObj).then(refreshHomes)
     }
 
     return (

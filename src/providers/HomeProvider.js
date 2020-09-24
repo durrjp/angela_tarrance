@@ -11,24 +11,21 @@ export default function HomeProvider(props) {
     const storage = firebase.storage().ref()
 
     const getHomes = () => {
-        let newArray = []
+        let homesArray = []
         return db.collection('homes').get().then(homes => {
-            const homesArray = []
             homes.forEach(doc => {
                 homesArray.push(doc.data())
             })
-            return homesArray
-        }).then((homesReturned) => {
-            newArray = homesReturned
-            var i
-            for(i = 0; i > newArray.length; i++) {
-                storage.child(`homeimages/${newArray[i].Image}`).getDownloadURL().then(url => {
-                    debugger
-                    newArray[i].Image = url
-                })
-            }
         }).then(() => {
-            setHomes(newArray)
+            let promiseArray = homesArray.map(home => {
+                return storage.child(`homeimages/${home.Image}`).getDownloadURL().then(url => {
+                    const i = homesArray.findIndex(item => item.Street === home.Street)
+                    homesArray[i].Image = url
+                })
+            })
+            return Promise.all(promiseArray)
+        }).then(() => {
+            setHomes(homesArray)
         })
     }
 
@@ -37,7 +34,6 @@ export default function HomeProvider(props) {
     }
 
     const addHome = (homeObj) => {
-        debugger
         return db.collection('homes').add(homeObj)
     }
 
