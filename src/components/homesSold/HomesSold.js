@@ -3,33 +3,30 @@ import { Button, Card, CardBody, CardColumns, CardImg, CardText, CardTitle} from
 import Footer from "../footer/Footer"
 import Header from "../header/Header"
 import "./HomesSold.css"
-import Home from "../../images/home1.jpg"
-import Home2 from "../../images/home2.jpg"
-import Home3 from "../../images/home3.jpg"
 import { useHistory } from "react-router-dom"
 import Fade from 'react-reveal/Fade';
 import { HomeContext } from "../../providers/HomeProvider"
 import { UserContext } from "../../providers/UserProvider"
 import AddHomeForm from "./AddHomeForm"
+import * as firebase from "firebase/app";
+import 'firebase/auth'
+import 'firebase/storage'
 
 
 export default function HomesSold() {
-    const { getHomes} = useContext(HomeContext)
+    const { getHomes, homes, setHomes} = useContext(HomeContext)
     const {isLoggedIn} = useContext(UserContext)
-    const [homes, setHomes] = useState([]);
     const history = useHistory();
     const [modal, setModal] = useState(false)
+    const [homeIURLS, setHomeIUrls] = useState([])
+    
     useEffect(() => {
-        getHomes().then(res => {
-            setHomes(res)
-        } )
+        getHomes()
     },[])
 
     const toggle = () => {
         setModal(!modal)
     }
-
-    gs://angelatarrance-25ce6.appspot.com/homeimages
     
     return (
         <>
@@ -50,18 +47,20 @@ export default function HomesSold() {
             <Fade up>
                 <CardColumns className="cards-container">
                     {
-                        homes.map(home => (
-                            <Card className="home-card">
-                                <CardImg top width="100%" src={Home} alt="home picture" />
-                                <CardBody className="card-body">
-                                    <CardTitle>
-                                        <p>{home.Street}</p>
-                                        <p>{home.City}, {home.State}</p> 
-                                    </CardTitle>
-                                    <CardText>${home.Price}</CardText>
-                                </CardBody>
-                            </Card>
-                        ))
+                        homes.map(home => {
+                                return (
+                                    <Card className="home-card">
+                                        <CardImg top width="100%" src={home.Image} alt="home picture" />
+                                        <CardBody className="card-body">
+                                            <CardTitle>
+                                                <p>{home.Street}</p>
+                                                <p>{home.City}, {home.State}</p> 
+                                            </CardTitle>
+                                            <CardText>${home.Price}</CardText>
+                                        </CardBody>
+                                    </Card>
+                                )
+                        })
                     }
                 </CardColumns>
             </Fade>

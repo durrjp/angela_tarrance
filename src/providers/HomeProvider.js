@@ -1,19 +1,34 @@
 import React, { useState, useEffect, createContext } from "react";
 import * as firebase from "firebase/app";
 import "firebase/auth";
+import 'firebase/storage'
 
 export const HomeContext = createContext();
 
 export default function HomeProvider(props) {
+    const [homes, setHomes] = useState([]);
     const db = firebase.firestore();
+    const storage = firebase.storage().ref()
 
     const getHomes = () => {
-        return db.collection('homes').get().then(function(homes) {
+        let newArray = []
+        return db.collection('homes').get().then(homes => {
             const homesArray = []
-            homes.forEach(function(doc) {
+            homes.forEach(doc => {
                 homesArray.push(doc.data())
             })
             return homesArray
+        }).then((homesReturned) => {
+            newArray = homesReturned
+            var i
+            for(i = 0; i > newArray.length; i++) {
+                storage.child(`homeimages/${newArray[i].Image}`).getDownloadURL().then(url => {
+                    debugger
+                    newArray[i].Image = url
+                })
+            }
+        }).then(() => {
+            setHomes(newArray)
         })
     }
 
@@ -22,12 +37,15 @@ export default function HomeProvider(props) {
     }
 
     const addHome = (homeObj) => {
+        debugger
         return db.collection('homes').add(homeObj)
     }
 
     return (
         <HomeContext.Provider
             value={{
+                homes,
+                setHomes,
                 getHomes,
                 addHome
             }}

@@ -73,7 +73,7 @@ export default function Home() {
             </div>
             <div className="communities-section-container">
                 <div className="communities-title">
-                    <h1>Nashville Communites</h1>
+                    <h1>Nashville Communities</h1>
                 </div>
                 <Fade up>
                     <div className="communities">

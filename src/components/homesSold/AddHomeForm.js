@@ -1,14 +1,15 @@
-import React, {useState} from "react"
+import React, {useContext, useState} from "react"
 import {Modal, Button, ModalHeader, ModalBody, Form, FormGroup, Label, Input, Row, Col} from "reactstrap"
 import * as firebase from "firebase/app";
 import 'firebase/auth'
 import 'firebase/storage'
+import { HomeContext } from "../../providers/HomeProvider";
 
 export default function AddHomeForm({toggle, modal}) {
+    const {addHome} = useContext(HomeContext)
     const [city, setCity] = useState()
     const [description, setDescription] = useState()
     const [forSale, setForSale] = useState()
-    const [images, setImages] = useState()
     const [price, setPrice] = useState()
     const [state, setState] = useState()
     const [street, setStreet] = useState()
@@ -20,8 +21,30 @@ export default function AddHomeForm({toggle, modal}) {
         const file = event.target.files[0]
         const homeImagesRef = storage.child(`homeimages/${event.target.value}`)
         if(file) {
-            storage.put(file)
+            homeImagesRef.put(file)
+            setImageFileName(event.target.value)
         }
+    }
+
+    const storeHome = () => {
+        const forSaleVar = ""
+        if(forSale === 1) {
+            forSaleVar = true
+        } else {
+            forSaleVar = false
+        }
+        
+        const homeObj = {
+            City: city,
+            Description: description,
+            ForSale: forSaleVar,
+            Price: price,
+            State: state,
+            Street: street,
+            ZipCode: zipCode,
+            Image: imageFileName
+        }
+        addHome(homeObj)
     }
 
     return (
@@ -79,8 +102,8 @@ export default function AddHomeForm({toggle, modal}) {
                                     name="forSale"
                                     onChange = {(e) => setForSale(e.target.value)}
                                 >
-                                    <option value={true}>Yes</option>
-                                    <option value={false}>No</option>
+                                    <option value={1}>Yes</option>
+                                    <option value={0}>No</option>
                                 </Input>
                             </FormGroup>
                         </Col>
@@ -114,7 +137,13 @@ export default function AddHomeForm({toggle, modal}) {
                             onChange={(e) => setDescription(e.target.value)}
                         />
                     </FormGroup>
-                <Button color="primary" onClick={toggle}>Save</Button>{' '}
+                    <FormGroup>
+                        <Button color="primary" onClick={(e) => {
+                            e.preventDefault()
+                            storeHome()
+                            toggle()
+                        }}>Save</Button>
+                    </FormGroup>
                 </Form>
             </ModalBody>
         </Modal>
