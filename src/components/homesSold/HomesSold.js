@@ -51,16 +51,19 @@ export default function HomesSold() {
                     {
                         homes.map(home => {
                                 return (
-                                    <Card className="home-card">
-                                        <CardImg top width="100%" src={home.Image} alt="home picture" />
-                                        <CardBody className="card-body">
-                                            <CardTitle>
-                                                <p>{home.Street}</p>
-                                                <p>{home.City}, {home.State}</p> 
-                                            </CardTitle>
-                                            <CardText>${home.Price}</CardText>
-                                        </CardBody>
-                                    </Card>
+                                    <a className="homecard-link" target="_blank" href={home.SiteURL}>
+                                        <Card className="home-card">
+                                            <CardImg top width="100%" src={home.Image} alt="home picture" />
+                                            <CardBody className="card-body">
+                                                <CardTitle>
+                                                    <p>{home.Street}</p>
+                                                    <p>{home.City}, {home.State}</p> 
+                                                    <p>{home.Bedrooms} Bedrooms | {home.Bathrooms} Bathrooms | {home.SquareFeet} SQ ft</p>
+                                                </CardTitle>
+                                                <CardText style={{fontWeight: "bold"}}>${home.Price}</CardText>
+                                            </CardBody>
+                                        </Card>
+                                    </a>
                                 )
                         })
                     }

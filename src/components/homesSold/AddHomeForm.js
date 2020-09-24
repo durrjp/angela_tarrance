@@ -7,14 +7,17 @@ import { HomeContext } from "../../providers/HomeProvider";
 
 export default function AddHomeForm({toggle, modal, refreshHomes}) {
     const {addHome} = useContext(HomeContext)
+    const [bathrooms, setBathrooms] = useState()
+    const [bedrooms, setBedrooms] = useState()
     const [city, setCity] = useState()
-    const [description, setDescription] = useState()
     const [forSale, setForSale] = useState()
+    const [imageFileName, setImageFileName] = useState();
     const [price, setPrice] = useState()
+    const [siteURL, setSiteURL] = useState()
     const [state, setState] = useState()
     const [street, setStreet] = useState()
+    const [squareFeet, setSquareFeet] = useState()
     const [zipCode, setZipCode] = useState()
-    const [imageFileName, setImageFileName] = useState();
 
     const storage = firebase.storage().ref()
     const storeImage = (event) => {
@@ -35,14 +38,17 @@ export default function AddHomeForm({toggle, modal, refreshHomes}) {
         }
 
         const homeObj = {
+            Bathrooms: bathrooms,
+            Bedrooms: bedrooms,
             City: city,
-            Description: description,
             ForSale: forSaleVar,
+            Image: imageFileName,
             Price: price,
+            SiteURL: siteURL,
+            SquareFeet: squareFeet,
             State: state,
             Street: street,
             ZipCode: zipCode,
-            Image: imageFileName
         }
         addHome(homeObj).then(refreshHomes)
     }
@@ -72,7 +78,7 @@ export default function AddHomeForm({toggle, modal, refreshHomes}) {
                                 />
                             </FormGroup>
                         </Col>
-                        <Col md={4}>
+                        <Col md={2}>
                             <FormGroup>
                                 <Label for="state">State</Label>
                                 <Input 
@@ -82,13 +88,45 @@ export default function AddHomeForm({toggle, modal, refreshHomes}) {
                                 />
                             </FormGroup>
                         </Col>
-                        <Col md={2}>
+                        <Col md={4}>
                             <FormGroup>
                                 <Label for="zip">Zip</Label>
                                 <Input 
                                     type="text"
                                     name="zip"
                                     onChange={(e) => setZipCode(e.target.value)}
+                                />
+                            </FormGroup>  
+                        </Col>
+                    </Row>
+                    <Row form>
+                        <Col md={3}>
+                            <FormGroup>
+                                <Label for="Bedrooms">Bedrooms</Label>
+                                <Input 
+                                    type="number" 
+                                    name="Bedrooms"
+                                    onChange={(e) => setBedrooms(e.target.value)}
+                                />
+                            </FormGroup>
+                        </Col>
+                        <Col md={3}>
+                            <FormGroup>
+                                <Label for="Bathrooms">Bathrooms</Label>
+                                <Input 
+                                    type="number" 
+                                    name="Bathrooms"
+                                    onChange={(e) => setBathrooms(e.target.value)}
+                                />
+                            </FormGroup>
+                        </Col>
+                        <Col md={3}>
+                            <FormGroup>
+                                <Label for="SquareFeet">SquareFeet</Label>
+                                <Input 
+                                    type="number"
+                                    name="SquareFeet"
+                                    onChange={(e) => setSquareFeet(e.target.value)}
                                 />
                             </FormGroup>  
                         </Col>
@@ -130,11 +168,11 @@ export default function AddHomeForm({toggle, modal, refreshHomes}) {
                         />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="description">Description</Label>
+                        <Label for="SiteURL">Site URL</Label>
                         <Input 
-                            type="textarea"
-                            name="description"
-                            onChange={(e) => setDescription(e.target.value)}
+                            type="text"
+                            name="SiteURL"
+                            onChange={(e) => setSiteURL(e.target.value)}
                         />
                     </FormGroup>
                     <FormGroup>
