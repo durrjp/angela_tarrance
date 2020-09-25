@@ -6,7 +6,7 @@
 }
 
 .testimonialtop-background {
-    background-image:linear-gradient( rgba(72, 72, 77, 0.9), rgba(0, 0, 0, 0.5) ), url("../../images/NashvilleSkyline2.jpg");
+    background-image:linear-gradient( rgba(72, 72, 77, 0.3), rgba(0, 0, 0, 0.2) ), url("../../images/NashvilleSkyline2.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     justify-content: center;
