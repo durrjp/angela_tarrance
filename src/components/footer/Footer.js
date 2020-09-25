@@ -15,16 +15,22 @@ export default function Footer() {
                     <div className="social-container">
                         <p className="footer-subitem">
                             <a href="https://www.facebook.com/AngelaDurrREMAX/" target="_blank">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0)">
-                                <path d="M37.1152 0H2.88483C1.2915 0 0 1.2915 0 2.88483V37.1152C0 38.7085 1.2915 40 2.88483 40H21.3672V24.5312H16.1719V18.4766H21.3672V14.0207C21.3672 8.85345 24.5218 6.04095 29.1312 6.04095C31.3388 6.04095 33.2361 6.20544 33.7891 6.27899V11.6797H30.6107C28.1027 11.6797 27.6172 12.8714 27.6172 14.6204V18.4766H33.6133L32.832 24.5312H27.6172V40H37.1152C38.7085 40 40 38.7085 40 37.1152V2.88483C40 1.2915 38.7085 0 37.1152 0V0Z" fill="white"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0">
-                                <rect width="40" height="40" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M37.1152 0H2.88483C1.2915 0 0 1.2915 0 2.88483V37.1152C0 38.7085 1.2915 40 2.88483 40H21.3672V24.5312H16.1719V18.4766H21.3672V14.0207C21.3672 8.85345 24.5218 6.04095 29.1312 6.04095C31.3388 6.04095 33.2361 6.20544 33.7891 6.27899V11.6797H30.6107C28.1027 11.6797 27.6172 12.8714 27.6172 14.6204V18.4766H33.6133L32.832 24.5312H27.6172V40H37.1152C38.7085 40 40 38.7085 40 37.1152V2.88483C40 1.2915 38.7085 0 37.1152 0V0Z" fill="url(#paint0_linear)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FED3CD"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+
                             </a>
                         </p>
                         <p className="footer-subitem">
