@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.2",
     "firebase": "^7.21.0",
+    "firebase-tools": "^8.11.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-iframe": "^1.8.0",
