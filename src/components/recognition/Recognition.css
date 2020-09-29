@@ -10,5 +10,25 @@
 }
 
 .awards-container {
-    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.halloffame-container {
+    margin: 2em
+}
+
+.yearawards-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto
+}
+
+.yearaward-item {
+    margin: 1em;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    
 }

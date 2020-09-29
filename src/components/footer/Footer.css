@@ -4,30 +4,46 @@
     justify-content: space-evenly;
     width: 100%;
     text-align: center;
-    background:  #000000;
+    background:  rgba(37, 37, 37);
     color: white;
     height: auto;
     padding: 1em;
     font-family: 'Raleway', sans-serif;
 }
 
+.gradient-border {
+    height: 2em;
+    background: linear-gradient(108.42deg, #FED3CD 32.45%, #fff3f3 106.68%);
+}
+
 
 .footer-title {
     margin-top: 1em;
+    font-weight: bold;
 }
 .contact-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     width: 100%;
     margin-top: 1em;
+}
+
+.contact-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.contact-item-p {
+    height: 40px;
+    padding: 6px
 }
 
 .social-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    margin-top: 1em;
 }
 
 .remax-logo-container {
@@ -37,7 +53,7 @@
 }
 
 .remax-logo {
-    background-image: url("../../images/RemaxAdvantage.jpg");
+    background-image: url("../../images/2017-CMN_REMAX_Collection_RGB.jpg");
     height:100px;
     width: 500px;
     background-repeat: no-repeat;
@@ -47,5 +63,7 @@
 }
 
 .footer-subitem {
-    margin: 1em
+    margin: 1em;
 }
+
+

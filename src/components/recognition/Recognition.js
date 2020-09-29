@@ -2,6 +2,9 @@ import React from "react"
 import Footer from "../footer/Footer"
 import Header from "../header/Header"
 import "./Recognition.css"
+import HallOfFame from "../../images/awards/2017_RM_HallofFame_outlines.png"
+import Platinum from "../../images/awards/Platinum.png"
+import OneHundred from "../../images/awards/100_Percent.png"
 
 export default function Recognition() {
     return (
@@ -17,14 +20,32 @@ export default function Recognition() {
                     </div>
                     <div className="awards-container">
                         <h3>Awards</h3>
-                        <ul>
-                            <li>2019 - Platinum Club Award Winner</li>
-                            <li>2018 - RE/MAX Hall of Fame Inductee</li>
-                            <li>2018 - Platinum Club Award Winner</li>
-                            <li>2017 - Platinum Club Award Winner</li>
-                            <li>2016 - Platinum Club Award Winner</li>
-                            <li>2015 - Platinum Club Award Winner</li>
-                        </ul>
+                        <div className="halloffame-container">
+                            <img width="178" height="224" src={HallOfFame}/>
+                        </div>
+                        <div className="yearawards-container">
+                            <div className="yearaward-item">
+                                <p>2015</p>
+                                <img width="210" height="110" src={OneHundred}/>
+                            </div>
+                            <div className="yearaward-item">
+                                <p>2016</p>
+                                <img width="210" height="110" src={OneHundred}/>
+                            </div>
+                            <div className="yearaward-item">
+                                <p>2017</p>
+                                <img width="210" height="108" src={Platinum} />
+                            </div>
+                            <div className="yearaward-item">
+                                <p>2018</p>
+                                <img width="210" height="108" src={Platinum} />
+                            </div>
+                            <div className="yearaward-item">
+                                <p>2019</p>
+                                <img width="210" height="108" src={Platinum} />
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

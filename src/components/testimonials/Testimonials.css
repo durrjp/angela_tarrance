@@ -43,16 +43,26 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
-.testimonial-giver {
-    font-weight: bold;
-}
-
 .testimonial-item {
     background-color: rgb(253, 253, 253);
-    padding: 1em;
     border-radius: 5px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    margin-bottom: 1.5em;
 }
+
+.testimonial-text {
+    padding: .8em
+}
+.testimonial-giver {
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 2em;
+}
+
+.testimonial-author {
+    border-radius: 5px
+}
+
 .externalreviews-container {
     display: flex;
     flex-flow: column nowrap;

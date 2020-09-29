@@ -15,7 +15,8 @@ export default function ContactMeForm() {
                                 <FormGroup>
                                     <Label>Name</Label>
                                     <Input
-                                        type="text" 
+                                        type="text"
+                                        className="contactme-input"
                                     />
                                 </FormGroup>
                             </Col>
@@ -24,6 +25,7 @@ export default function ContactMeForm() {
                                     <Label>Email</Label>
                                     <Input 
                                         type="text"
+                                        className="contactme-input"
                                     />
                                 </FormGroup>
                             </Col>
@@ -34,6 +36,7 @@ export default function ContactMeForm() {
                                     <Label>Message</Label>
                                     <Input 
                                         type="textarea"
+                                        className="contactme-input"
                                     />
                                 </FormGroup>
                             </Col>
