@@ -38,3 +38,21 @@
     color: black;
 }
 
+.addhome-button {
+    height: 70px;
+    width: 300px;
+    background:  #FED3CD !important;
+    border: none !important;
+    color: black !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    margin-top: .5em;
+}
+
+.addhome-button:hover, .addhome-button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #000000;
+    transform: translateY(-0.25em);
+}
+

@@ -38,7 +38,7 @@
 .personal-profile-container {
     display: flex;
     flex-flow: column nowrap;
-    background-image:linear-gradient( rgba(19, 19, 19, 0.6), rgba(0, 0, 0, 0.5) ), url("../../images/NashvilleHighRes.jpg");
+    background-image:linear-gradient( rgba(19, 19, 19, 0.6), rgba(0, 0, 0, 0.637) ), url("../../images/NashvilleHighRes.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     justify-content: center;
@@ -187,6 +187,26 @@
     text-decoration: none;
     color: rgb(147, 233, 255);
     font-weight: bold
+}
+
+/* Why Nashville */
+.whynashville-container {
+    background-image: linear-gradient( 90deg,rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.9) ),url("../../images/nashvilledowntown.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    width: 100%;
+    height: 800px;
+    padding: 2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.whynashville-text-container {
+    margin-top: 4em;
+    margin-left: 5em;
+    width: 50%;
+    text-align: left;
+
 }
 
 

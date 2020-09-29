@@ -29,12 +29,12 @@ export default function Footer() {
                     <div className="social-container">
                         <p className="footer-subitem">
                             <a href="https://www.facebook.com/AngelaDurrREMAX/" target="_blank">
-                            <img width="50" height="57" src={Facebook} alt="Facebook logo" />
+                            <img width="45" height="55" src={Facebook} alt="Facebook logo" />
                             </a>
                         </p>
                         <p className="footer-subitem">
                             <a href="https://www.instagram.com/angeladurrtarrance/" target="_blank">
-                            <img width="50" height="62" src={Instagram} alt="Instagram logo" />
+                            <img width="53" height="64" src={Instagram} alt="Instagram logo" />
                             </a>
                         </p>
                         <p className="footer-subitem">

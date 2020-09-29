@@ -38,7 +38,7 @@ export default function HomesSold() {
                 <h4 className="featuredhomes-title">Featured Homes</h4>
             </div>
             {isLoggedIn ?
-                <Button onClick={(e) => {
+                <Button className="addhome-button" onClick={(e) => {
                     e.preventDefault()
                     toggle()
                 }}>
