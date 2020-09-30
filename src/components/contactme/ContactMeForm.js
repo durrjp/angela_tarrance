@@ -36,7 +36,7 @@ export default function ContactMeForm() {
                                     <Label>Message</Label>
                                     <Input 
                                         type="textarea"
-                                        className="contactme-input"
+                                        className="contactme-input textarea-input"
                                     />
                                 </FormGroup>
                             </Col>

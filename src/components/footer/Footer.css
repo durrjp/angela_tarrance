@@ -62,6 +62,16 @@
     margin: 2em
 }
 
+.footer-leftcontainer {
+    border: 5px dotted;
+    border-color: #FED3CD;
+}
+
+.footer-rightcontainer {
+    border: 5px dotted;
+    border-color: #FED3CD;
+}
+
 .footer-subitem {
     margin: 1em;
 }

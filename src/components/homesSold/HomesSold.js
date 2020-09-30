@@ -8,7 +8,6 @@ import Fade from 'react-reveal/Fade';
 import { HomeContext } from "../../providers/HomeProvider"
 import { UserContext } from "../../providers/UserProvider"
 import AddHomeForm from "./AddHomeForm"
-import * as firebase from "firebase/app";
 import 'firebase/auth'
 import 'firebase/storage'
 
@@ -30,6 +29,10 @@ export default function HomesSold() {
     const refreshHomes = () => {
         getHomes()
     }
+
+    // const cardImgStyle1 = {
+    //     background
+    // }
     return (
         <>
         <Header />
@@ -47,27 +50,30 @@ export default function HomesSold() {
                 : <div></div>
             }
             <Fade up>
-                <CardColumns className="cards-container">
+                <div className="cards-container">
                     {
                         homes.map(home => {
                                 return (
                                     <a className="homecard-link" target="_blank" href={home.SiteURL}>
-                                        <Card className="home-card">
-                                            <CardImg top width="100%" src={home.Image} alt="home picture" />
+                                        <Card className="home-card"
+                                            // onMouseEnter={}
+                                            // onMouseLeave={}
+                                        >
+                                            <CardImg className="cardimgback" top width="100%" src={home.Image} alt="home picture" />
                                             <CardBody className="card-body">
                                                 <CardTitle>
                                                     <p>{home.Street}</p>
                                                     <p>{home.City}, {home.State}</p> 
                                                     <p>{home.Bedrooms} Bedrooms | {home.Bathrooms} Bathrooms | {home.SquareFeet} SQ ft</p>
                                                 </CardTitle>
-                                                <CardText style={{fontWeight: "bold"}}>${home.Price}</CardText>
+                                                <CardText style={{fontWeight: "bold"}}>${home.Price.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}</CardText>
                                             </CardBody>
                                         </Card>
                                     </a>
                                 )
                         })
                     }
-                </CardColumns>
+                </div>
             </Fade>
         </div>
         <Footer />

@@ -20,22 +20,46 @@
 }
 
 .cards-container {
-    margin: 2em;
     font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .home-card {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-    margin: 1em;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    margin: 3em;
+    width: 30em;
 }
+
 
 .card-body {
     text-align: center;
     font-size: 20px;
 }
 
+.cardimgback {
+    background: #0000004d !important;
+}
+
 .homecard-link {
     color: black;
+}
+
+.homecard-link:link {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.homecard-link:visited {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+
+.home-card-link:hover {
+    color: black !important;
+    text-decoration: none !important;
 }
 
 .addhome-button {
