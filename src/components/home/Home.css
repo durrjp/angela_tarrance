@@ -18,10 +18,10 @@
 }
 
 .carousel-title {
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.801);
-    color: rgb(255, 255, 255);
-    font-family: 'Poiret One', cursive;
-    font-size: 100px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.801);
+    color: rgba(255, 255, 255, 0.89);
+    font-family: 'Sacramento', cursive;
+    font-size: 150px;
 }
 
 .carousel-details {
@@ -30,7 +30,8 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
     color: rgb(255, 255, 255);
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 25px;
     width: 100%;
     font-style: italic;
 }
@@ -191,7 +192,7 @@
 
 /* Why Nashville */
 .whynashville-container {
-    background-image: linear-gradient( 90deg,rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.9) ),url("../../images/nashvilledowntown.jpg");
+    background-image: linear-gradient( 90deg,rgba(0, 0, 0), rgba(126, 125, 125, 0.3) ),url("../../images/nashvilledowntown.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -199,15 +200,26 @@
     height: 800px;
     padding: 2em;
     font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 1.2em
 }
 
 .whynashville-text-container {
-    margin-top: 4em;
+    margin-top: .5em;
     margin-left: 5em;
     width: 50%;
     text-align: left;
-
 }
+
+.whynashville-titles {
+    font-weight: bold;
+    color: #FED3CD
+}
+
+.centered-title {
+    text-align: center;
+}
+
 
 
 

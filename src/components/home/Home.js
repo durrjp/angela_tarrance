@@ -24,7 +24,7 @@ export default function Home() {
     return (
         <>
             <div className="carousel-overlay">
-                <p className="carousel-title">ANGELA TARRANCE</p>
+                <p className="carousel-title">Angela Tarrance</p>
                 <div className="carousel-details">
                     <p>Best Service</p>
                     <p>Nashville Luxury Homes</p>
@@ -72,22 +72,24 @@ export default function Home() {
             </div>
             <div className="whynashville-container">
                 <div className="whynashville-text-container">
-                    <h1>Why Nashville?</h1>
+                    <div className="centered-title">
+                        <h1>Why Nashville?</h1>
+                    </div>
                     <p>Why are hundreds of professionals and families moving to Nashville each year? Here are a few of the reasons why.</p>
-                    <h2>Affordability</h2>
+                    <h2 className="whynashville-titles">Affordability</h2>
                     <p>Being in Tennessee, Nashville boasts one of the lowest cost of living in the country in regards to property taxes. 
                     The influx of residents means more expansion into suburbs and many properties being available for buyers in all
                     price ranges.
                     </p>
-                    <h2>Industry</h2>
+                    <h2 className="whynashville-titles">Industry</h2>
                     <p>Nashville has become the hub for many large industries: entertainment, healthcare, and IT to name a few... Many companies
                         are moving to Nashville due to the low cost of living and potential for growth.
                     </p>
-                    <h2>Fun</h2>
+                    <h2 className="whynashville-titles">Fun</h2>
                     <p>It's no secret Nashville is one of the greatest destinations in the United States for it's world famous Broadway and live-music.
                         Nashville is also home to a variety of breweries and other activities to keep visitors coming back for more.
                     </p>
-                    <h2>Community</h2>
+                    <h2 className="whynashville-titles">Community</h2>
                     <p>Nashville is no stranger to hardship from the 100 year flood in 2010 to the devastating tornadoes in 2019. However, Nashville,
                         is a community that comes together during hard times to support one another and build a better city.
                     </p>
