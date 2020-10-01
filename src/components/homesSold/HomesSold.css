@@ -32,6 +32,15 @@
     width: 30em;
 }
 
+.home-card-header {
+    background-color: #1d1d1d !important;
+    color: white
+}
+
+.home-street {
+    font-size: 25px
+}
+
 
 .card-body {
     text-align: center;

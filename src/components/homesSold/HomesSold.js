@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react"
-import { Button, Card, CardBody, CardColumns, CardImg, CardText, CardTitle} from "reactstrap"
+import { Button, Card, CardBody, CardColumns, CardHeader, CardImg, CardText, CardTitle} from "reactstrap"
 import Footer from "../footer/Footer"
 import Header from "../header/Header"
 import "./HomesSold.css"
@@ -30,9 +30,7 @@ export default function HomesSold() {
         getHomes()
     }
 
-    // const cardImgStyle1 = {
-    //     background
-    // }
+
     return (
         <>
         <Header />
@@ -53,16 +51,21 @@ export default function HomesSold() {
                 <div className="cards-container">
                     {
                         homes.map(home => {
+                            const soldOrNot = () => {
+                                if(home.ForSale === true) {
+                                    return "Available"
+                                } else {
+                                    return "Sold"
+                                }
+                            }
                                 return (
                                     <a className="homecard-link" target="_blank" href={home.SiteURL}>
-                                        <Card className="home-card"
-                                            // onMouseEnter={}
-                                            // onMouseLeave={}
-                                        >
-                                            <CardImg className="cardimgback" top width="100%" src={home.Image} alt="home picture" />
+                                        <Card className="home-card">
+                                            <CardHeader className="home-card-header">{soldOrNot()}</CardHeader>
+                                            <CardImg className="cardimgback" bottom width="100%" src={home.Image} alt="home picture" />
                                             <CardBody className="card-body">
                                                 <CardTitle>
-                                                    <p>{home.Street}</p>
+                                                    <p className="home-street">{home.Street}</p>
                                                     <p>{home.City}, {home.State}</p> 
                                                     <p>{home.Bedrooms} Bedrooms | {home.Bathrooms} Bathrooms | {home.SquareFeet} SQ ft</p>
                                                 </CardTitle>

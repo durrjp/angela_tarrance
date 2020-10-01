@@ -102,43 +102,43 @@ export default function Home() {
                 <Fade up>
                     <div className="communities">
                         <div className="community-item">
-                            <div className="community Arrington" />
+                            <a href="http://www.arringtonvineyards.com/" target="_blank"><div className="community Arrington" /></a>
                             <p className="community-title">Arrington</p>
                         </div>
                         <div className="community-item">
-                            <div className="community Brentwood" />
+                            <a href="https://www.tnvacation.com/middle-tennessee/brentwood" target="_blank"><div className="community Brentwood" /></a>
                             <p className="community-title">Brentwood</p>
                         </div>
                         <div className="community-item">
-                            <div className="community CollegeGrove" />
+                            <a href="https://www.zillow.com/college-grove-tn/" target="_blank"><div className="community CollegeGrove" /></a>
                             <p className="community-title">College Grove</p>
                         </div>
                         <div className="community-item">
-                            <div className="community Franklin" />
+                            <a href="https://visitfranklin.com/" target="_blank"><div className="community Franklin" /></a>
                             <p className="community-title">Franklin</p>
                         </div>
                         <div className="community-item">
-                            <div className="community MountJuliet" />
+                            <a href="https://www.mtjuliet-tn.gov/" target="_blank"><div className="community MountJuliet" /></a>
                             <p className="community-title">Mount Juliet</p>
                         </div>
                         <div className="community-item">
-                            <div className="community Murfreesboro" />
+                            <a href="https://www.murfreesborotn.gov/" target="_blank"><div className="community Murfreesboro" /></a>
                             <p className="community-title">Murfreesboro</p>
                         </div>
                         <div className="community-item">
-                            <div className="community Nashville" />
+                            <a href="https://www.visitmusiccity.com/" target="_blank"><div className="community Nashville" /></a>
                             <p className="community-title">Nashville</p>
                         </div>
                         <div className="community-item">
-                            <div className="community Nolensville" />
+                            <a href="https://www.nolensvilletn.gov/" target="_blank"><div className="community Nolensville" /></a>
                             <p className="community-title">Nolensville</p>
                         </div>
                         <div className="community-item">
-                            <div className="community SpringHill" />
+                            <a href="https://www.springhilltn.org/" target="_blank"><div className="community SpringHill" /></a>
                             <p className="community-title">Spring Hill</p>
                         </div>
                         <div className="community-item">
-                            <div className="community ThompsonStation" />
+                            <a href="https://www.thompsons-station.com/" target="_blank"><div className="community ThompsonStation" /></a>
                             <p className="community-title">Thompson Station</p>
                         </div>
                     </div>

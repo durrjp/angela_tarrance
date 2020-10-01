@@ -9,6 +9,7 @@
     height: auto;
     padding: 1em;
     font-family: 'Raleway', sans-serif;
+    
 }
 
 .gradient-border {
@@ -60,16 +61,6 @@
     background-size: 100% 100%;
     border-radius: 5px;
     margin: 2em
-}
-
-.footer-leftcontainer {
-    border: 5px dotted;
-    border-color: #FED3CD;
-}
-
-.footer-rightcontainer {
-    border: 5px dotted;
-    border-color: #FED3CD;
 }
 
 .footer-subitem {
