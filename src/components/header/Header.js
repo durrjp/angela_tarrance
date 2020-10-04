@@ -81,7 +81,6 @@ export default function Header() {
 </clipPath>
 </defs>
 </svg>
-
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>

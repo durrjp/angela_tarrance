@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react"
-import { Button, Card, CardBody, CardColumns, CardHeader, CardImg, CardText, CardTitle} from "reactstrap"
+import { Button, Card, CardBody, CardHeader, CardImg, CardText, CardTitle} from "reactstrap"
 import Footer from "../footer/Footer"
 import Header from "../header/Header"
 import "./HomesSold.css"
