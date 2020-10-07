@@ -51,18 +51,10 @@ export default function HomesSold() {
                 <div className="cards-container">
                     {
                         homes.map(home => {
-                            const soldOrNot = () => {
-                                if(home.ForSale === true) {
-                                    return "Available"
-                                } else {
-                                    return "Sold"
-                                }
-                            }
                                 return (
                                     <a className="homecard-link" target="_blank" href={home.SiteURL}>
                                         <Card className="home-card">
-                                            <CardHeader className="home-card-header">{soldOrNot()}</CardHeader>
-                                            <CardImg className="cardimgback" bottom width="100%" src={home.Image} alt="home picture" />
+                                            <CardImg className="cardimgback" top width="100%" src={home.Image} alt="home picture" />
                                             <CardBody className="card-body">
                                                 <CardTitle>
                                                     <p className="home-street">{home.Street}</p>

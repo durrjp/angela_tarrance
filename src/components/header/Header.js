@@ -103,7 +103,7 @@ export default function Header() {
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>
-                                <img width="40px" height="40px" src={Phone} />(615) 627-8779
+                                <img width="40px" height="40px" src={Phone} />(615) 627-6927
                                 </DropdownItem>
                                 <DropdownItem>
                                 <img width="40px" height="40px" src={Mail} />angelatarrancehomes@gmail.com

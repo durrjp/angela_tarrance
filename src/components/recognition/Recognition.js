@@ -17,6 +17,9 @@ export default function Recognition() {
                 <div className="recognitionbottom-container">
                     <div className="media-container">
                         <h3>Media</h3>
+                        <div>
+                            Angela was featured in Nashville Real Producer magazine 
+                        </div>
                     </div>
                     <div className="awards-container">
                         <h3>Awards</h3>
@@ -30,7 +33,7 @@ export default function Recognition() {
                             </div>
                             <div className="yearaward-item">
                                 <p>2016</p>
-                                <img width="210" height="110" src={OneHundred}/>
+                                <img width="210" height="110" src={Platinum}/>
                             </div>
                             <div className="yearaward-item">
                                 <p>2017</p>

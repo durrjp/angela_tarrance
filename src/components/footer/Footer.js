@@ -15,10 +15,11 @@ export default function Footer() {
             <div className="gradient-border" />
             <div className="footer-container">
                 <div className="footer-leftcontainer">
-                    <h2 className="footer-title">Angela Tarrance</h2>
+                    <h2 className="footer-title">Angela Tarrance | Director of Luxury Home Sales</h2>
+                    <h4>CHLMS, CRS, ABR, SRES</h4>
                     <div className="contact-container">
                         <div className="contact-item">
-                            <p className="contact-item-p">615 627-8779</p>
+                            <p className="contact-item-p">615 627-6927</p>
                             <img width="40px" height="40px" src={Phone} />
                         </div>
                         <div className="contact-item">

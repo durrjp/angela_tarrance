@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     width: 100%;
     text-align: center;
-    background: rgb(7, 7, 31);
+    background: rgba(37, 37, 37);
     color: white;
     height: auto;
     padding: 1em;
@@ -60,7 +60,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 5px;
-    margin: 2em
+    margin: 1em
 }
 
 .footer-subitem {

@@ -9,6 +9,10 @@
 .recognition-page-container {
 }
 
+.media-container {
+    background-color: #292929;
+}
+
 .awards-container {
     display: flex;
     flex-flow: column nowrap;
