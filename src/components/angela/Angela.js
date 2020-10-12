@@ -7,7 +7,7 @@ export default function Angela() {
     return (
         <>
             <Header />
-            <div className="angela-container">\
+            <div className="angela-container">
             <div className="angela-profiletext-container">
                             <h1>Angela Tarrance</h1>
                             <p style={{textAlign: "left"}}>
