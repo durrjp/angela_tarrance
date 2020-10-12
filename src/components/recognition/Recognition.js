@@ -5,6 +5,8 @@ import "./Recognition.css"
 import HallOfFame from "../../images/awards/2017_RM_HallofFame_outlines.png"
 import Platinum from "../../images/awards/Platinum.png"
 import OneHundred from "../../images/awards/100_Percent.png"
+import CLHMS from "../../images/awards/CLHMSSpecialistGold.png"
+import CLHMSGuild from "../../images/awards/CLHMSGuildLogo.png"
 
 export default function Recognition() {
     return (
@@ -24,7 +26,9 @@ export default function Recognition() {
                     <div className="awards-container">
                         <h3>Awards</h3>
                         <div className="halloffame-container">
+                            <img width="220" height="224" src={CLHMS}/>
                             <img width="178" height="224" src={HallOfFame}/>
+                            <img width="220" height="224" src={CLHMSGuild}/>
                         </div>
                         <div className="yearawards-container">
                             <div className="yearaward-item">
