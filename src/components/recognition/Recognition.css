@@ -10,7 +10,12 @@
 }
 
 .media-container {
-    background-color: #292929;
+}
+
+.magazine-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .awards-container {

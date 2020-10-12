@@ -7,6 +7,9 @@ import Platinum from "../../images/awards/Platinum.png"
 import OneHundred from "../../images/awards/100_Percent.png"
 import CLHMS from "../../images/awards/CLHMSSpecialistGold.png"
 import CLHMSGuild from "../../images/awards/CLHMSGuildLogo.png"
+import RealProducers from "../../images/awards/NashvilleRealProducersLogo.png"
+import NashvilleLifestyle from "../../images/awards/NashvilleLifestylesLogo.png"
+import { Button, Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap"
 
 export default function Recognition() {
     return (
@@ -19,8 +22,33 @@ export default function Recognition() {
                 <div className="recognitionbottom-container">
                     <div className="media-container">
                         <h3>Media</h3>
-                        <div>
-                            Angela was featured in Nashville Real Producer magazine 
+                        <div className="magazine-container">
+                            <Card>
+                                <CardImg top width="100%" src={RealProducers} alt="Nashville Real Producers Logo" />
+                                <CardBody>
+                                    <CardTitle>
+                                        July 2017 - Angela was featured in Nashville Real Producers Magazine
+                                    </CardTitle>
+                                    <CardText>
+                                        <Button>
+                                            Read
+                                        </Button>
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                            <Card>
+                                <CardImg top width="100%" src={NashvilleLifestyle} alt="Nashville Real Producers Logo" />
+                                <CardBody>
+                                    <CardTitle>
+                                        November 2020 - Angela was featured in Nashville Lifestyles Magazine
+                                    </CardTitle>
+                                    <CardText>
+                                        <Button>
+                                            Read
+                                        </Button>
+                                    </CardText>
+                                </CardBody>
+                            </Card>
                         </div>
                     </div>
                     <div className="awards-container">

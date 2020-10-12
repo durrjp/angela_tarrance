@@ -52,7 +52,7 @@
 }
 
 .angela-img-container {
-    background-image:  url("../../images/AngelaPicture.jpg");
+    background-image: url("../../images/AngelaPicture.jpg");
     width: 500px;
     height:500px;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@
 
 .angela-profiletext-container {
     font-family: 'Raleway', sans-serif;
-    width: 60%;
+    width: 700px;
     margin-left: 2em;
     font-size: 1.3em;
     margin: 2em;
