@@ -9,6 +9,7 @@ import CLHMS from "../../images/awards/CLHMSSpecialistGold.png"
 import CLHMSGuild from "../../images/awards/CLHMSGuildLogo.png"
 import RealProducers from "../../images/awards/NashvilleRealProducersLogo.png"
 import NashvilleLifestyle from "../../images/awards/NashvilleLifestylesLogo.png"
+import RealProducersPDF from "../../images/NashvilleRealProducersMag.pdf"
 import { Button, Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap"
 
 export default function Recognition() {
@@ -23,29 +24,32 @@ export default function Recognition() {
                     <div className="media-container">
                         <h3>Media</h3>
                         <div className="magazine-container">
-                            <Card>
+                            <Card className="magazine-card">
                                 <CardImg top width="100%" src={RealProducers} alt="Nashville Real Producers Logo" />
                                 <CardBody>
                                     <CardTitle>
                                         July 2017 - Angela was featured in Nashville Real Producers Magazine
                                     </CardTitle>
                                     <CardText>
-                                        <Button>
-                                            Read
-                                        </Button>
+                                        <a href={RealProducersPDF} download>
+                                            <Button>
+                                                Read
+                                            </Button>
+                                        </a>
                                     </CardText>
                                 </CardBody>
                             </Card>
-                            <Card>
+                            <Card className="magazine-card">
                                 <CardImg top width="100%" src={NashvilleLifestyle} alt="Nashville Real Producers Logo" />
                                 <CardBody>
                                     <CardTitle>
                                         November 2020 - Angela was featured in Nashville Lifestyles Magazine
                                     </CardTitle>
                                     <CardText>
-                                        <Button>
+                                        {/* <Button>
                                             Read
-                                        </Button>
+                                        </Button> */}
+                                        Coming Soon!
                                     </CardText>
                                 </CardBody>
                             </Card>

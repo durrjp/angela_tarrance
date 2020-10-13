@@ -14,13 +14,38 @@ import WesthavenArches from "../../images/carousel/WesthavenArches.jpg"
 import Piano from "../../images/carousel/PostRoadPiano.jpg"
 import Stanfield from "../../images/carousel/StanfieldFrontPorch.jpg"
 import Lake from "../../images/carousel/LakeHarbor.jpg"
+import ChasePoint from "../../images/carousel/ChasePoint.jpg"
+import Ravello from "../../images/carousel/RavelloWine.jpg"
+import GrannyWhiteFront from "../../images/carousel/GrannyWhiteFrontDoor.jpg"
+import GrannyWhiteChand from "../../images/carousel/GrannyWhiteChand.jpg"
+import GrannyWhiteFence from "../../images/carousel/GrannyWhiteFence.jpg"
+import GrannyWhitePool from "../../images/carousel/GrannyWhitePool.jpg"
+import LysanderStairs from "../../images/carousel/LysanderStairs.jpg"
+import LysanderChand from "../../images/carousel/LysanderChand.jpg"
+import DougHill from "../../images/carousel/DougHillBirdHouse.jpg"
+import GovStairs from "../../images/carousel/33GovernorsStairs.jpg"
+import GovDrone from "../../images/carousel/33GovernorsDrone.jpg"
+import GovStudy from "../../images/carousel/33GovernorsStudy.jpg"
+import McEwen from "../../images/carousel/3631McEwenBack.jpg"
+import ClarenceMurphyEntry from "../../images/carousel/ClarenceMurphyEntrance.jpg"
+import ClarenceMurphyBarn from "../../images/carousel/ClarenceMurphyEntrance.jpg"
+import AvalonEntrance from "../../images/carousel/AvalonEntrance.jpg"
+import GovernorsLibrary from "../../images/carousel/45GovernorsLibrary.jpg"
+import GovernorsDining from "../../images/carousel/45GovernorsDining.jpg"
+import GovernorsFrontDoor from "../../images/carousel/45GovernorsFrontDoor.jpg"
+import GovernorsFlowers from "../../images/carousel/45GovernorsFlowers.jpg"
+import WaylandBourbon from "../../images/carousel/WaylandBourbon.jpg"
+
 
 import "./Home.css"
 
 export default function CarouselSlider() {
     return (
         <div>
-            <Carousel dynamicHeight={true} interval={2500} transitionTime={800} infiniteLoop autoPlay showThumbs={false}>
+            <Carousel dynamicHeight={true} fade={true} interval={2500} transitionTime={800} infiniteLoop autoPlay showThumbs={false}>
+                <div>
+                    <img className="carousel-image" src={GrannyWhite} alt="suburbs" />
+                </div>
                 <div>
                     <img className="carousel-image" src={ValleVerde} alt="house1" />
                 </div>
@@ -31,10 +56,22 @@ export default function CarouselSlider() {
                     <img className="carousel-image" src={Clarence1} alt="house2" />
                 </div>
                 <div>
+                    <img className="carousel-image" src={McEwen} alt="house2" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GovernorsDining} alt="house2" />
+                </div>
+                <div>
                     <img className="carousel-image" src={Nottoway} alt="house1" />
                 </div>
                 <div>
                     <img className="carousel-image" src={Lysander} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={ClarenceMurphyEntry} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GovernorsLibrary} alt="house2" />
                 </div>
                 <div>
                     <img className="carousel-image" src={Tradition} alt="suburbs" />
@@ -43,23 +80,72 @@ export default function CarouselSlider() {
                     <img className="carousel-image" src={Westhaven} alt="suburbs" />
                 </div>
                 <div>
+                    <img className="carousel-image" src={AvalonEntrance} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GovernorsFlowers} alt="house2" />
+                </div>
+                <div>
                     <img className="carousel-image" src={WesthavenArches} alt="suburbs" />
                 </div>
                 <div>
                     <img className="carousel-image" src={Piano} alt="suburbs" />
                 </div>
                 <div>
+                    <img className="carousel-image" src={ClarenceMurphyBarn} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GovernorsFrontDoor} alt="house2" />
+                </div>
+                <div>
                     <img className="carousel-image" src={WesthavenDrone} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={LysanderChand} alt="suburbs" />
                 </div>
                 <div>
                     <img className="carousel-image" src={Stanfield} alt="suburbs" />
                 </div>
                 <div>
+                    <img className="carousel-image" src={GovStudy} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={ChasePoint} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={Ravello} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={DougHill} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GrannyWhiteFront} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={LysanderStairs} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GrannyWhitePool} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GovStairs} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GrannyWhiteFence} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GrannyWhiteChand} alt="suburbs" />
+                </div>
+                <div>
                     <img className="carousel-image" src={Lake} alt="suburbs" />
                 </div>
                 <div>
-                    <img className="carousel-image" src={GrannyWhite} alt="suburbs" />
+                    <img className="carousel-image" src={WaylandBourbon} alt="suburbs" />
                 </div>
+                <div>
+                    <img className="carousel-image" src={GovDrone} alt="suburbs" />
+                </div>
+                
             </Carousel>
         </div>
     )
