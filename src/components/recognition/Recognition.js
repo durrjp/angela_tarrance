@@ -21,46 +21,45 @@ export default function Recognition() {
             </div>
             <div className="recognition-page-container">
                 <div className="recognitionbottom-container">
+                    <p className="media-title"><span className="media-bold">Angela</span> in the media...</p>
                     <div className="media-container">
-                        <h3>Media</h3>
-                        <div className="magazine-container">
-                            <Card className="magazine-card">
-                                <CardImg top width="100%" src={RealProducers} alt="Nashville Real Producers Logo" />
-                                <CardBody>
-                                    <CardTitle>
-                                        July 2017 - Angela was featured in Nashville Real Producers Magazine
-                                    </CardTitle>
-                                    <CardText>
-                                        <a href={RealProducersPDF} download>
-                                            <Button>
-                                                Read
-                                            </Button>
-                                        </a>
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-                            <Card className="magazine-card">
-                                <CardImg top width="100%" src={NashvilleLifestyle} alt="Nashville Real Producers Logo" />
-                                <CardBody>
-                                    <CardTitle>
-                                        November 2020 - Angela was featured in Nashville Lifestyles Magazine
-                                    </CardTitle>
-                                    <CardText>
-                                        {/* <Button>
-                                            Read
-                                        </Button> */}
-                                        Coming Soon!
-                                    </CardText>
-                                </CardBody>
-                            </Card>
+                        <div className="media-div">
+                            <div>
+                                <p className="media-div-text">July 2017 - Angela was featured in Nashville Real Producers Magazine</p>
+                                <a href={RealProducersPDF} download>
+                                    <Button>
+                                        Read
+                                    </Button>
+                                </a>
+                            </div>
+                            <img className="media-div-img" src={RealProducers} alt="Nashville Real Producers Logo" />
+                        </div>
+                        <div className="media-div">
+                            <div>
+                                <p className="media-div-text">November 2020 - Angela was featured in Nashville Lifestyles Magazine</p>
+                                {/* <Button>
+                                    Read
+                                </Button> */}
+                                Coming Soon!
+                            </div>
+                            <img className="media-div-img" src={NashvilleLifestyle} alt="Nashville Lifestyles Logo" />
                         </div>
                     </div>
-                    <div className="awards-container">
-                        <h3>Awards</h3>
-                        <div className="halloffame-container">
+                    <div className="gradient-border-media" />
+                    <div className="designations-container">
+                        <p className="awards-title">Designations</p>
+                        <div className="designations-items">
                             <img width="220" height="224" src={CLHMS}/>
-                            <img width="178" height="224" src={HallOfFame}/>
                             <img width="220" height="224" src={CLHMSGuild}/>
+
+                        </div>
+
+                    </div>
+                    <div className="gradient-border-media" />
+                    <div className="awards-container">
+                        <p className="awards-title">RE/MAX Awards</p>
+                        <div className="halloffame-container">
+                            <img width="178" height="224" src={HallOfFame}/>
                         </div>
                         <div className="yearawards-container">
                             <div className="yearaward-item">

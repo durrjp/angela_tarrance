@@ -4,7 +4,7 @@
 }
 
 .homestop-background {
-    background-image:linear-gradient( rgba(72, 72, 77, 0.9), rgba(0, 0, 0, 0.5) ), url("../../images/NashvilleSkyline3.jpg");
+    background-image: url("../../images/NashvilleSkyline3.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     justify-content: center;
@@ -16,7 +16,9 @@
     padding-top: 3em;
     color: white;
     font-size: 4em;
+    font-weight: bold;
     font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 3px black;
 }
 
 .cards-container {

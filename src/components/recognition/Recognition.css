@@ -1,5 +1,5 @@
 .recognitiontop-background {
-    background-image:linear-gradient( rgba(72, 72, 77, 0.9), rgba(0, 0, 0, 0.5) ), url("../../images/NashvilleSkyline2.jpg");
+    background-image: url("../../images/NashvilleSkyline2.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     justify-content: center;
@@ -7,21 +7,60 @@
 }
 
 .recognition-page-container {
+    padding: 2vw
 }
+
 
 .media-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
 }
 
-.magazine-container {
+.media-title {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(92, 92, 92, 0.507);
+}
+
+.media-div {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    padding: 2em
 }
 
+.media-div-text {
+    margin-left: 1vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    width: 43vw
+}
+
+.media-div-img {
+    margin-left: 10vw
+}
+
+.media-bold {
+    font-family: "Sacramento";
+    font-size: 90px;
+    color: #FED3CD;
+    font-weight: normal !important;
+    text-shadow: none !important
+}
 .awards-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+}
+
+.awards-title {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(92, 92, 92, 0.507);
 }
 
 .halloffame-container {
@@ -42,6 +81,9 @@
     
 }
 
-.magazine-card {
-    padding: 2em
+.gradient-border-media {
+    height: 1em;
+    background: linear-gradient(108.42deg, #383838 32.45%, #bebebe 106.68%);
+    margin-bottom: 4em;
+    margin-top: 4em
 }
