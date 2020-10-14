@@ -6,7 +6,6 @@ import Footer from "../footer/Footer"
 import Header from "../header/Header"
 import CarouselSlider from "./CarouselSlider"
 import Fade from 'react-reveal/Fade';
-import Broadway from "../../images/Broadway.jpg"
 
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
