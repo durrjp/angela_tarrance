@@ -10,6 +10,8 @@ import CLHMSGuild from "../../images/awards/CLHMSGuildLogo.png"
 import RealProducers from "../../images/awards/NashvilleRealProducersLogo.png"
 import NashvilleLifestyle from "../../images/awards/NashvilleLifestylesLogo.png"
 import RealProducersPDF from "../../images/NashvilleRealProducersMag.pdf"
+import SRES from "../../images/SRESLogo.jpg"
+import CMN from "../../images/CMNLogo.jpg"
 import { Button, Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap"
 
 export default function Recognition() {
@@ -49,9 +51,9 @@ export default function Recognition() {
                     <div className="designations-container">
                         <p className="awards-title">Designations</p>
                         <div className="designations-items">
-                            <img width="220" height="224" src={CLHMS}/>
-                            <img width="220" height="224" src={CLHMSGuild}/>
-
+                            <img className="designation-item" width="220" height="224" src={CLHMS}/>
+                            <img className="designation-item" width="220" height="224" src={CLHMSGuild}/>
+                            <img className="designation-item" width="450" height="224" src={SRES}/>
                         </div>
 
                     </div>
@@ -59,7 +61,14 @@ export default function Recognition() {
                     <div className="awards-container">
                         <p className="awards-title">RE/MAX Awards</p>
                         <div className="halloffame-container">
-                            <img width="178" height="224" src={HallOfFame}/>
+                            <div className="hof-item">
+                                <p className="hof-text">RE/MAX Hall of Fame Recipient</p>
+                                <img width="178" height="224" src={HallOfFame}/>
+                            </div>
+                            <div className="hof-item">
+                                <p className="hof-text">RE/MAX Miracle Agent</p>
+                                <img width="500" height="224" src={CMN}/>
+                            </div>
                         </div>
                         <div className="yearawards-container">
                             <div className="yearaward-item">

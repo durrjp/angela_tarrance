@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import ValleVerde from "../../images/carousel/1641ValleVerdeStreet.jpg"
 import Bathroom from "../../images/carousel/1641ValleVerdeBathroom.jpg"
 import Clarence1 from "../../images/carousel/4304ClarenceOutside.jpg"
-import Lysander from "../../images/carousel/5256LysanderCeiling.jpg"
+import PrinceCeiling from "../../images/carousel/PrinceValiantCeiling.jpg"
 import GrannyWhite from "../../images/carousel/5444GrannyWhiteBack.jpg"
 import Nottoway from "../../images/carousel/NottowayFireplace.jpg"
 import Tradition from "../../images/carousel/18TraditionBack.jpg"
@@ -28,13 +28,21 @@ import GovDrone from "../../images/carousel/33GovernorsDrone.jpg"
 import GovStudy from "../../images/carousel/33GovernorsStudy.jpg"
 import McEwen from "../../images/carousel/3631McEwenBack.jpg"
 import ClarenceMurphyEntry from "../../images/carousel/ClarenceMurphyEntrance.jpg"
-import ClarenceMurphyBarn from "../../images/carousel/ClarenceMurphyEntrance.jpg"
+import ClarenceMurphyBarn from "../../images/carousel/ClarenceMurphyBarn.jpg"
+import ClarenceMurphyPool from "../../images/carousel/ClarenceMurphyPool.jpg"
+import ClarenceMurphyDrone from "../../images/carousel/ClarenceMurphyDrone.jpg"
 import AvalonEntrance from "../../images/carousel/AvalonEntrance.jpg"
 import GovernorsLibrary from "../../images/carousel/45GovernorsLibrary.jpg"
 import GovernorsDining from "../../images/carousel/45GovernorsDining.jpg"
 import GovernorsFrontDoor from "../../images/carousel/45GovernorsFrontDoor.jpg"
 import GovernorsFlowers from "../../images/carousel/45GovernorsFlowers.jpg"
+import GovernorsPool from "../../images/carousel/45GovernorsPool.jpg"
+import GovernorsGolf from "../../images/carousel/45GovernorsGolf.jpg"
 import WaylandBourbon from "../../images/carousel/WaylandBourbon.jpg"
+import CarmelBack from "../../images/carousel/14CarmelBack.jpg"
+import CarmelFountain from "../../images/carousel/14CarmelFountain.jpg"
+import CarmelPiano from "../../images/carousel/14CarmelPiano.jpg"
+import CarmelWine from "../../images/carousel/14CarmelWine.jpg"
 
 
 import "./Home.css"
@@ -42,7 +50,7 @@ import "./Home.css"
 export default function CarouselSlider() {
     return (
         <div>
-            <Carousel dynamicHeight={true} fade={true} interval={2500} transitionTime={800} infiniteLoop autoPlay showThumbs={false}>
+            <Carousel dynamicHeight={true} fade={true} interval={3500} transitionTime={1000} infiniteLoop autoPlay showThumbs={false}>
                 <div>
                     <img className="carousel-image" src={GrannyWhite} alt="suburbs" />
                 </div>
@@ -65,13 +73,31 @@ export default function CarouselSlider() {
                     <img className="carousel-image" src={Nottoway} alt="house1" />
                 </div>
                 <div>
-                    <img className="carousel-image" src={Lysander} alt="suburbs" />
+                    <img className="carousel-image" src={CarmelBack} alt="house1" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={CarmelFountain} alt="house1" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={CarmelPiano} alt="house1" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={CarmelWine} alt="house1" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={PrinceCeiling} alt="suburbs" />
                 </div>
                 <div>
                     <img className="carousel-image" src={ClarenceMurphyEntry} alt="suburbs" />
                 </div>
                 <div>
                     <img className="carousel-image" src={GovernorsLibrary} alt="house2" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GovernorsPool} alt="house2" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={GovernorsGolf} alt="house2" />
                 </div>
                 <div>
                     <img className="carousel-image" src={Tradition} alt="suburbs" />
@@ -134,6 +160,9 @@ export default function CarouselSlider() {
                     <img className="carousel-image" src={GrannyWhiteFence} alt="suburbs" />
                 </div>
                 <div>
+                    <img className="carousel-image" src={ClarenceMurphyPool} alt="suburbs" />
+                </div>
+                <div>
                     <img className="carousel-image" src={GrannyWhiteChand} alt="suburbs" />
                 </div>
                 <div>
@@ -141,6 +170,9 @@ export default function CarouselSlider() {
                 </div>
                 <div>
                     <img className="carousel-image" src={WaylandBourbon} alt="suburbs" />
+                </div>
+                <div>
+                    <img className="carousel-image" src={ClarenceMurphyDrone} alt="suburbs" />
                 </div>
                 <div>
                     <img className="carousel-image" src={GovDrone} alt="suburbs" />

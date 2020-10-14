@@ -4,10 +4,10 @@
     font-weight: bold;
     z-index: 1;
     width: 100%;
-    text-shadow: rgba(36, 35, 35, 0.486)  1px 1px 3px !important;
+    text-shadow: hsl(228, 39%, 15%)  1px 1px 3px !important;
     color: white !important;
     font-size: 17px;
-    background-color:  rgba(37, 37, 37, 0.85) !important;
+    background-color:  rgb(24, 30, 55,.85) !important;
     
 }
 .header-container-clear {

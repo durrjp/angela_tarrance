@@ -19,7 +19,11 @@ export default function Footer() {
                     <h4>CHLMS, CRS, ABR, SRES</h4>
                     <div className="contact-container">
                         <div className="contact-item">
-                            <p className="contact-item-p">615 627-6927</p>
+                            <p className="contact-item-p">Cell: 615 627-6927</p>
+                            <img width="40px" height="40px" src={Phone} />
+                        </div>
+                        <div className="contact-item">
+                            <p className="contact-item-p">Office: 615 301-1650</p>
                             <img width="40px" height="40px" src={Phone} />
                         </div>
                         <div className="contact-item">

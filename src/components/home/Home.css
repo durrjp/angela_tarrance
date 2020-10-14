@@ -41,7 +41,7 @@
 .personal-profile-container {
     display: flex;
     flex-flow: column nowrap;
-    background-image:linear-gradient( rgba(19, 19, 19, 0.6), rgba(0, 0, 0, 0.637) ), url("../../images/NashvilleHighRes.jpg");
+    background-image:linear-gradient( rgb(24, 30, 55,.90), rgba(24, 30, 55, 0.452) ), url("../../images/NashvilleHighRes.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     justify-content: center;
