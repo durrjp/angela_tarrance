@@ -1,5 +1,5 @@
 .recognitiontop-background {
-    background-image:linear-gradient( rgba(0, 0, 0, 0.4), rgba(44, 41, 41, 0.952) ), url("../../images/angela/AngelaOffice.JPG");
+    background-image:linear-gradient( rgba(0, 0, 0, 0.1), rgba(44, 41, 41, 0.952) ), url("../../images/angela/AngelaOffice.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;

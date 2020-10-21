@@ -65,8 +65,8 @@
 
 .angela-profiletext-container {
     font-family: 'Raleway', sans-serif;
-    width: 700px;
-    margin-left: 2em;
+    width: 40vw;
+    margin-left: 1em;
     font-size: 1.3em;
     margin: 2em;
     color: white;
@@ -97,8 +97,7 @@
     width: 300px;
     display: inline-grid;
     height: 80px;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 1em;
     background: linear-gradient(140.42deg, #f1d5a3 50.45%, #FFFFFF 106.68%);
     color: black;
     font-weight: bold;
