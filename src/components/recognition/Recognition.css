@@ -1,13 +1,23 @@
 .recognitiontop-background {
-    background-image: url("../../images/NashvilleSkyline2.jpg");
+    background-image:linear-gradient( rgb(24, 30, 55,.90), rgba(24, 30, 55, 0.452) ), url("../../images/angela/AngelaOffice.JPG");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     justify-content: center;
-    height: 500px
+    height: 100vh
 }
 
 .recognition-page-container {
     padding: 2vw
+}
+
+.recognition-title {
+    text-align: center;
+    padding-top: 7vh;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 3px black;
 }
 
 

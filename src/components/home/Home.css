@@ -54,10 +54,11 @@
 }
 
 .angela-img-container {
-    background-image: url("../../images/AngelaPicture.jpg");
-    width: 500px;
-    height:500px;
+    background-image: url("../../images/angela/AngelaCheek.JPG");
+    width: 700px;
+    height:600px;
     background-repeat: no-repeat;
+    background-size: contain;
     border-radius: 5px;
     margin: 2em
 }
@@ -98,7 +99,7 @@
     height: 80px;
     margin-left: 1em;
     margin-right: 1em;
-    background: linear-gradient(140.42deg, #FED3CD 50.45%, #FFFFFF 106.68%);
+    background: linear-gradient(140.42deg, #f1d5a3 50.45%, #FFFFFF 106.68%);
     color: black;
     font-weight: bold;
     border-radius: 5px;
@@ -117,7 +118,7 @@
 }
 
 .readmore-button:hover, .readmore-button:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em #FED3CD;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1d5a3;
     transform: translateY(-0.25em);
 }
 
@@ -143,7 +144,7 @@
 }
 
 .learnmore-button:hover, .learnmore-button:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em #FED3CD;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1d5a3;
     transform: translateY(-0.25em);
 }
 
@@ -215,7 +216,7 @@
 
 .whynashville-titles {
     font-weight: bold;
-    color: #FED3CD
+    color: #f1d5a3
 }
 
 .centered-title {

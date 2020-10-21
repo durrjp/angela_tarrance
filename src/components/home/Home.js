@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
-import { Button, Card, CardImg, CardTitle, Collapse, Row } from "reactstrap"
-import ContactMeForm from "../contactme/ContactMeForm"
+import { Button } from "reactstrap"
 import Footer from "../footer/Footer"
 import Header from "../header/Header"
 import CarouselSlider from "./CarouselSlider"

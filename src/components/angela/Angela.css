@@ -1,8 +1,9 @@
 .angela-container {
-    background-image:linear-gradient( rgba(184, 183, 183, 0.849), rgba(3, 3, 3, 0.9) ),  url("../../images/AngelaPicture2.jpg");
+    background-image:linear-gradient( rgba(184, 183, 183, 0.849), rgba(3, 3, 3, 0.9) ),  url("../../images/angela/AngelaPool.JPG");
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 2em;
     padding-top: 7em;
     display: flex;

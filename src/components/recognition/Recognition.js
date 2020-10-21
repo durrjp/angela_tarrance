@@ -12,6 +12,8 @@ import NashvilleLifestyle from "../../images/awards/NashvilleLifestylesLogo.png"
 import RealProducersPDF from "../../images/NashvilleRealProducersMag.pdf"
 import SRES from "../../images/SRESLogo.jpg"
 import CMN from "../../images/CMNLogo.jpg"
+import CRS from "../../images/CRSDesignation.png"
+import ABR from "../../images/ABRDesignation.jpg"
 import { Button, Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap"
 
 export default function Recognition() {
@@ -19,7 +21,7 @@ export default function Recognition() {
         <>
             <Header />
             <div className="recognitiontop-background">
-                <h4 className="featuredhomes-title">Recognition</h4>
+                <h4 className="recognition-title">Recognition</h4>
             </div>
             <div className="recognition-page-container">
                 <div className="recognitionbottom-container">
@@ -51,9 +53,10 @@ export default function Recognition() {
                     <div className="designations-container">
                         <p className="awards-title">Designations</p>
                         <div className="designations-items">
-                            <img className="designation-item" width="220" height="224" src={CLHMS}/>
+                            <img className="designation-item" width="220" height="224" src={CRS}/>
                             <img className="designation-item" width="220" height="224" src={CLHMSGuild}/>
                             <img className="designation-item" width="450" height="224" src={SRES}/>
+                            <img className="designation-item" width="500" height="224" src={ABR}/>
                         </div>
 
                     </div>

@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="footer-container">
                 <div className="footer-leftcontainer">
                     <h2 className="footer-title">Angela Tarrance | Director of Luxury Home Sales</h2>
-                    <h4>CHLMS, CRS, ABR, SRES</h4>
+                    <h4>CRS, CLHMS, SRES, ABR</h4>
                     <div className="contact-container">
                         <div className="contact-item">
                             <p className="contact-item-p">Cell: 615 627-6927</p>
