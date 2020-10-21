@@ -23,6 +23,7 @@ export default function ContactMeForm() {
             template_params,
             'user_tJZEjGIkVYce60J3odJJ5'
         )
+        alert("Thank you for contacting me!")
     }
 
     const handleNameChange = (value) => {
