@@ -7,7 +7,7 @@
     text-shadow: hsl(228, 39%, 15%)  1px 1px 3px !important;
     color: white !important;
     font-size: 17px;
-    background-color:  rgb(24, 30, 55,.85) !important;
+    background-color:  rgba(255, 255, 255, 0.85) !important;
     
 }
 .header-container-clear {

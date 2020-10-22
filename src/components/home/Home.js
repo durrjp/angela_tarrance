@@ -5,6 +5,7 @@ import Footer from "../footer/Footer"
 import Header from "../header/Header"
 import CarouselSlider from "./CarouselSlider"
 import Fade from 'react-reveal/Fade';
+import LogoFull from "../../images/logos/SiteLogoFull.png"
 
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Home() {
     return (
         <>
             <div className="carousel-overlay">
-                <p className="carousel-title">Angela Tarrance</p>
+                <img className="full-logo-image" src={LogoFull} height="400" />
                 <div className="carousel-details">
                     <p>Best Service</p>
                     <p>Nashville Luxury Homes</p>
