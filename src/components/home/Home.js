@@ -23,7 +23,7 @@ export default function Home() {
     return (
         <>
             <div className="carousel-overlay">
-                <img className="full-logo-image" src={LogoFull} height="400" />
+                <p className="carousel-title">Angela Tarrance</p>
                 <div className="carousel-details">
                     <p>Best Service</p>
                     <p>Nashville Luxury Homes</p>

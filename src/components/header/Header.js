@@ -5,7 +5,7 @@ import "./Header.css"
 import { UserContext } from "../../providers/UserProvider";
 import Mail from "../../images/icons/FlyBirdsBox_RoseGold_Icons-mail.png"
 import Phone from "../../images/icons/FlyBirdsBox_RoseGold_Icons-phone.png"
-import ShortenedLogo from "../../images/logos/SiteLogoFullShortened.png"
+import Logo from "../../images/logos/SiteLogoFull.png"
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -54,9 +54,9 @@ export default function Header() {
         style={{ transition: '.5s ease' }}>
             <Navbar light expand="md">
                 <NavbarBrand className="navbar-style" tag={RRNavLink} to = "/">
-                    <img src={ShortenedLogo} width="200" height="80" />
+                    <img src={Logo} width="auto" height="120vh" />
                 </NavbarBrand>
-                <NavbarToggler onClick={toggle} />
+                <NavbarToggler className="app-nav-toggler" onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>

@@ -36,7 +36,7 @@ export default function HomesSold() {
         <Header />
         <div className="page-container">
             <div className="homestop-background">
-                <h4 className="featuredhomes-title">Featured Homes</h4>
+                <h4 className="featuredhomes-title">Featured Homes Sold</h4>
             </div>
             {isLoggedIn ?
                 <Button className="addhome-button" onClick={(e) => {

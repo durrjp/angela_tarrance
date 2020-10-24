@@ -23,7 +23,7 @@
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.801);
     color: rgba(255, 255, 255, 0.89);
     font-family: 'Sacramento', cursive;
-    font-size: 15vh;
+    font-size: 12vh;
 }
 
 .carousel-details {
@@ -59,10 +59,11 @@
 
 .angela-img-container {
     background-image: url("../../images/angela/AngelaCheek.JPG");
-    width: 600px;
-    height:600px;
+    width: 30vw;
+    height:60vh;
+    min-width: 330px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 5px;
     margin: 2em
 }
@@ -71,6 +72,7 @@
     font-family: 'Raleway', sans-serif;
     width: 40vw;
     margin-left: 1em;
+    min-width: 300px;
     font-size: 1.3em;
     margin: 2em;
     color: white;
@@ -212,8 +214,9 @@
 
 .whynashville-text-container {
     margin-top: .5em;
-    margin-left: 5em;
+    margin-left: 10vw;
     width: 75%;
+    min-width: 300px;
     text-align: left;
 }
 

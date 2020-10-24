@@ -4,9 +4,9 @@
     font-weight: bold;
     z-index: 1;
     width: 100%;
-    text-shadow: hsl(228, 39%, 15%)  1px 1px 3px !important;
-    color: white !important;
-    font-size: 17px;
+    text-shadow: hsl(228, 39%, 15%,.286)  1px 1px 1.5px !important;
+    color: rgb(24, 30, 55) !important;
+    font-size: 18px;
     background-color:  rgba(255, 255, 255, 0.85) !important;
     
 }
@@ -16,17 +16,18 @@
     font-weight: bold;
     z-index: 1;
     width: 100%;
-    text-shadow: rgba(36, 35, 35, 0.486)  1px 1px 3px !important;
-    color: white !important;
-    font-size: 17px;
+    text-shadow: rgba(36, 35, 35, 0.286)  1px 1px 1.5px !important;
+    color: rgb(24, 30, 55) !important;
+    font-size: 18px;
+    font-weight: bold !important;
 }
 
 .navItem {
-    color: white !important
+    color: rgb(24, 30, 55) !important
 }
 
 .navbar-style {
-    color: white !important;
+    color: rgb(24, 30, 55) !important;
     text-decoration: none !important;
 }
 
@@ -47,7 +48,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FFF;
+  background-color:rgb(24, 30, 55);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -55,6 +56,10 @@
 .middle:hover:before {
     visibility: visible;
     transform: scaleX(1);
+}
+
+.app-nav-toggler {
+    z-index: 1000 !important;
 }
 
 
