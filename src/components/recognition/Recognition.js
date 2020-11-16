@@ -9,12 +9,12 @@ import CLHMS from "../../images/awards/CLHMSSpecialistGold.png"
 import CLHMSGuild from "../../images/awards/CLHMSGuildLogo.png"
 import RealProducers from "../../images/awards/NashvilleRealProducersLogo.png"
 import NashvilleLifestyle from "../../images/awards/NashvilleLifestylesLogo.png"
-import RealProducersPDF from "../../images/NashvilleRealProducersMag.pdf"
 import SRES from "../../images/SRESLogo.jpg"
 import CMN from "../../images/CMNLogo.jpg"
 import CRS from "../../images/CRSDesignation.png"
 import ABR from "../../images/ABRDesignation.jpg"
 import { Button, Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap"
+import fullMag from "../images/AngelaTarrancePromoCover.pdf"
 
 export default function Recognition() {
     return (
@@ -30,7 +30,7 @@ export default function Recognition() {
                         <div className="media-div">
                             <div>
                                 <p className="media-div-text">July 2017 - Angela was featured in Nashville Real Producers Magazine</p>
-                                <a href={RealProducersPDF} download>
+                                <a href={fullMag} download>
                                     <Button>
                                         Read
                                     </Button>
