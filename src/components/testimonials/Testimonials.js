@@ -22,7 +22,7 @@ export default function Testimonials() {
                         <div className="externalreviews-container">
                             <div className="zillow-container">
                                 <h2>Zillow Reviews (&#9733;&#9733;&#9733;&#9733;&#9733;)</h2>
-                                <a href="https://www.zillow.com/profile/AngelaTarrance/rental-manager/resources/" target="_blank" className="zillow-button">Open Zillow</a>
+                                <a href="https://www.zillow.com/profile/AngelaTarrance/" target="_blank" className="zillow-button">Open Zillow</a>
                             </div>
                             <div className="zillow-container">
                                 <h2>Facebook Reviews (&#9733;&#9733;&#9733;&#9733;&#9733;)</h2>
