@@ -119,3 +119,40 @@
     margin-bottom: 4em;
     margin-top: 4em
 }
+
+@media only screen and (max-width: 600px)
+{
+    .recognitiontop-background {
+        height: 50vh;
+    }
+
+    .recognition-title {
+        padding-top: 50vw;
+    }
+
+    .mediatext-div {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .media-container img {
+        width: 60vw;
+    }
+
+    .designation-item {
+        width: 30vw;
+        height: auto;
+    }
+
+    .halloffame-container img {
+        width: 30vw;
+        height: auto
+    }
+
+    .yearawards-container img {
+        width: 30vw;
+        height: auto
+    }
+}

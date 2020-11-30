@@ -29,7 +29,7 @@ export default function Recognition() {
                     <p className="media-title"><span className="media-bold">Angela</span> in the media...</p>
                     <div className="media-container">
                         <div className="media-div">
-                            <div>
+                            <div className="mediatext-div">
                                 <p className="media-div-text">July 2017 - Angela was featured in Nashville Real Producers Magazine</p>
                                 <a href={RealProducersPDF} download>
                                     <Button>
@@ -40,7 +40,7 @@ export default function Recognition() {
                             <img className="media-div-img" src={RealProducers} alt="Nashville Real Producers Logo" />
                         </div>
                         <div className="media-div">
-                            <div>
+                            <div className="mediatext-div">
                                 <p className="media-div-text">November 2020 - Angela was featured in Nashville Lifestyles Magazine</p>
                                 <a href={fullMag} download>
                                     <Button>
