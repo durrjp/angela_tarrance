@@ -1,8 +1,8 @@
-.header-container-black {
+.header-container-white {
     position: fixed !important;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    z-index: 1;
+    z-index: 1000;
     width: 100%;
     text-shadow: hsl(228, 39%, 15%,.286)  1px 1px 1.5px !important;
     color: rgb(24, 30, 55) !important;
@@ -14,7 +14,7 @@
     position: fixed !important;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    z-index: 1;
+    z-index: 1000;
     width: 100%;
     text-shadow: rgba(36, 35, 35, 0.286)  1px 1px 1.5px !important;
     color: rgb(24, 30, 55) !important;
@@ -60,6 +60,12 @@
 
 .app-nav-toggler {
     z-index: 1000 !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-style img {
+        height: 50px;
+    }
 }
 
 

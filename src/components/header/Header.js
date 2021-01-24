@@ -24,7 +24,7 @@ export default function Header() {
                 setNavBackground("header-container-clear")
             }
             else {
-              setNavBackground("header-container-black")
+              setNavBackground("header-container-white")
             }
         }
       
@@ -34,6 +34,14 @@ export default function Header() {
             document.removeEventListener("scroll", onScroll)
         }
     }, [scroll, setScroll])
+
+    useEffect(() => {
+
+        if (navBackground === "header-container-clear") {
+            setNavBackground("header-container-white")
+        }
+
+    }, [isOpen])
 
     const toggleDropdown = () => {
         setContactDropdown(prevState =>!prevState)
