@@ -69,4 +69,11 @@
     margin: 1em;
 }
 
+@media only screen and (max-width: 500px) {
+    .remax-logo {
+        height: 60px;
+        width: 280px;
+    }
+}
+
 
