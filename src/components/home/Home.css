@@ -437,5 +437,11 @@
     .whynashville-container {
         padding: 16px;
     }
+
+    .mobile-carousel {
+        display: none !important;
+    }
+
+    
 }
 
