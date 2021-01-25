@@ -1,3 +1,4 @@
+
 .carousel .thumb img {
     width: 100% !important;
     object-fit: cover;
@@ -72,6 +73,7 @@
     font-family: 'Raleway', sans-serif;
     width: 40vw;
     margin-left: 1em;
+    margin-top: 16px;
     min-width: 300px;
     font-size: 1.3em;
     margin: 2em;
@@ -146,6 +148,7 @@
     border: 2px solid white !important;
     border-radius: 5px;
     transition: .25s;
+    width: 90%;
 }
 
 .learnmore-button:hover, .learnmore-button:focus {
@@ -156,8 +159,8 @@
 .communities-section-container {
     display: flex;
     flex-flow: column nowrap;
-    margin-left: 5em;
-    margin-right: 5em
+    margin-left: 1em;
+    margin-right: 1em
 }
 
 .communities-title {
@@ -403,10 +406,36 @@
 }
 
 @media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 26px !important;
+    }
+
+    .angela-profiletext-container h1, .angela-profiletext-container p {
+        width: 94%;
+    }
+
+    .community {
+        width: 200px;
+        height: 200px;
+    }
+
+    .snippet-item {
+        width: 250px;
+        height: auto;
+        padding: 8px;
+    }
+
     .angela-profiletext-container {
         width: 40vw;
         font-size: 14px;
-        margin-left: 2rem;
-        margin-right: 2rem
+        margin: 0;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 16px;
+    }
+
+    .whynashville-container {
+        padding: 16px;
     }
 }
+

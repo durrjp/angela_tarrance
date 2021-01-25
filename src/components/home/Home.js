@@ -6,6 +6,7 @@ import Header from "../header/Header"
 import CarouselSlider from "./CarouselSlider"
 import Fade from 'react-reveal/Fade';
 import LogoFull from "../../images/logos/SiteLogoFull.png"
+import "../../App.css"
 
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
