@@ -19,11 +19,11 @@
     background: linear-gradient(108.42deg, #f1d5a3 50.45%, #fff3f3 106.68%);
 }
 
-
 .footer-title {
     margin-top: 1em;
     font-weight: bold;
 }
+
 .contact-container {
     display: flex;
     flex-flow: column nowrap;
@@ -73,6 +73,17 @@
     .remax-logo {
         height: 60px;
         width: 280px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .h4, h4 {
+        font-size: 16px;
+        font-weight: bold;
     }
 }
 
