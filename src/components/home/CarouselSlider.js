@@ -47,20 +47,16 @@ import "./Home.css"
 
 export default function CarouselSlider() {
 
-    const [width, setWidth] = useState();
-
-    const handleResize = () => {
-        setWidth(window.innerWidth);
-    }
-
+    const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => {
-
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        }
+    
+        window.addEventListener('resize', handleResize)
     })
-
-    window.addEventListener('resize', handleResize)
-
-    if (width < '400px') {
-
+    
+    if (width > 400) {
         return (
             <div>
                 <Carousel renderIndicator={false} dynamicHeight={true} fade={true} interval={3500} transitionTime={1000} infiniteLoop autoPlay showThumbs={false}>
