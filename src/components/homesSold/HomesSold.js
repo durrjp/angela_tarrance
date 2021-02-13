@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react"
-import { Button, Card, CardBody, CardHeader, CardImg, CardText, CardTitle} from "reactstrap"
+import { Button } from "reactstrap"
 import Footer from "../footer/Footer"
 import Header from "../header/Header"
 import "./HomesSold.css"
@@ -10,24 +10,25 @@ import { UserContext } from "../../providers/UserProvider"
 import AddHomeForm from "./AddHomeForm"
 import 'firebase/auth'
 import 'firebase/storage'
+import HomeSold from "./HomeSold"
 
 
 export default function HomesSold() {
-    const { getHomes, homes, setHomes} = useContext(HomeContext)
+    const { getHomes, homesSold, setHomes, homesLoading, setHomesLoading} = useContext(HomeContext)
     const {isLoggedIn} = useContext(UserContext)
     const history = useHistory();
     const [modal, setModal] = useState(false)
     
     useEffect(() => {
-        getHomes()
+        getHomes().then(response => setHomes(response));
     },[])
 
     const toggle = () => {
-        setModal(!modal)
+        setModal(!modal);
     }
 
     const refreshHomes = () => {
-        getHomes()
+        getHomes().then(response => setHomes(response));
     }
 
 
@@ -50,22 +51,8 @@ export default function HomesSold() {
             <Fade up>
                 <div className="cards-container">
                     {
-                        homes.map(home => {
-                                return (
-                                    <a className="homecard-link" target="_blank" href={home.SiteURL}>
-                                        <Card className="home-card">
-                                            <CardImg className="cardimgback" top width="100%" src={home.Image} alt="home picture" />
-                                            <CardBody className="card-body">
-                                                <CardTitle>
-                                                    <p className="home-street">{home.Street}</p>
-                                                    <p>{home.City}, {home.State}</p> 
-                                                    <p>{home.Bedrooms} Bedrooms | {home.Bathrooms} Bathrooms | {home.SquareFeet} SQ ft</p>
-                                                </CardTitle>
-                                                <CardText style={{fontWeight: "bold"}}>${home.Price.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}</CardText>
-                                            </CardBody>
-                                        </Card>
-                                    </a>
-                                )
+                        homesSold.map(home => {
+                            return <HomeSold home={home} homesLoading={homesLoading}  />
                         })
                     }
                 </div>

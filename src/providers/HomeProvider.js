@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, createContext } from "react";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import 'firebase/storage'
@@ -6,48 +6,58 @@ import 'firebase/storage'
 export const HomeContext = createContext();
 
 export default function HomeProvider(props) {
-    const [homes, setHomes] = useState([]);
+    const [homesSold, setHomesSold] = useState([]);
     const db = firebase.firestore();
     const storage = firebase.storage().ref()
+    const [homesLoading, setHomesLoading] = useState(true);
 
     const getHomes = () => {
-        let homesArray = []
+        let homesArray = [];
         return db.collection('homes').get().then(homes => {
             homes.forEach(doc => {
-                homesArray.push(doc.data())
+                homesArray.push(doc.data());
             })
         }).then(() => {
-            let promiseArray = homesArray.map(home => {
-                return storage.child(`homeimages/${home.Image}`).getDownloadURL().then(url => {
-                    const i = homesArray.findIndex(item => item.Street === home.Street)
-                    homesArray[i].Image = url
-                })
+            return homesArray;
+        })
+    };
+    const setHomes = (homesArray) => {
+        let newHomesArray = homesArray;
+        let promiseArray = newHomesArray.map(home => {
+            return storage.child(`homeimages/${home.Image}`).getDownloadURL().then(url => {
+                const i = newHomesArray.findIndex(item => item.Street === home.Street)
+                newHomesArray[i].Image = url;
+                setHomesLoading(false)
             })
-            return Promise.all(promiseArray)
-        }).then(() => {
-            setHomes(homesArray)
+        })
+        return Promise.all(promiseArray)
+        .then(() => {
+            setHomesSold(newHomesArray);
         })
     }
 
     const getCurrentHome = (id) => {
-        return db.collection('homes').doc(`${id}`).get()
+        return db.collection('homes').doc(`${id}`).get();
     }
 
     const addHome = (homeObj) => {
-        return db.collection('homes').add(homeObj)
+        return db.collection('homes').add(homeObj);
     }
 
     return (
         <HomeContext.Provider
             value={{
-                homes,
+                homesSold,
+                homesLoading,
+                setHomesLoading,
                 setHomes,
                 getHomes,
-                addHome
+                setHomesSold,
+                addHome,
+                getCurrentHome
             }}
         >
             {props.children}
         </HomeContext.Provider>
     )
-
 }
