@@ -99,5 +99,9 @@
     .home-card {
         width: auto;
     }
+
+    .featuredhomes-title {
+        font-size: 48px;
+    }
 }
 

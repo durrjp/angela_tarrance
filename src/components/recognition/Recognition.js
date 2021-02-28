@@ -13,6 +13,8 @@ import SRES from "../../images/SRESLogo.jpg"
 import CMN from "../../images/CMNLogo.jpg"
 import CRS from "../../images/CRSDesignation.png"
 import ABR from "../../images/ABRDesignation.jpg"
+import SOAR from "../../images/awards/SOAR_Award_2020.png"
+// import Chairman from "../../images/awards/Chairmans_Logo.jpg"
 import { Button } from "reactstrap"
 import fullMag from "../../images/angela/AngelaTarrancePromoCover.pdf"
 
@@ -29,14 +31,14 @@ export default function Recognition() {
                     <div className="media-container">
                         <div className="media-div">
                             <div className="mediatext-div">
-                                <p className="media-div-text">July 2017 - Angela was featured in Nashville Real Producers Magazine</p>
-                                <a href={RealProducersPDF} download>
+                                <p className="media-div-text">2020 Year - Angela was awarded with the SOAR Award - Top Agent Badge</p>
+                                <a href="https://issuu.com/soarnashville/docs/soar_awards_layout_pages_-_final?fr=sYmVlMjI4Njg1MzE" target="_blank" download>
                                     <Button>
                                         Read
                                     </Button>
                                 </a>
                             </div>
-                            <img className="media-div-img" src={RealProducers} alt="Nashville Real Producers Logo" />
+                            <img className="media-div-img soar-award" src={SOAR} alt="SOAR Award - Top Agent" />
                         </div>
                         <div className="media-div">
                             <div className="mediatext-div">
@@ -48,6 +50,17 @@ export default function Recognition() {
                                 </a>
                             </div>
                             <img className="media-div-img" src={NashvilleLifestyle} alt="Nashville Lifestyles Logo" />
+                        </div>
+                        <div className="media-div">
+                            <div className="mediatext-div">
+                                <p className="media-div-text">July 2017 - Angela was featured in Nashville Real Producers Magazine</p>
+                                <a href={RealProducersPDF} download>
+                                    <Button>
+                                        Read
+                                    </Button>
+                                </a>
+                            </div>
+                            <img className="media-div-img" src={RealProducers} alt="Nashville Real Producers Logo" />
                         </div>
                     </div>
                     <div className="gradient-border-media" />
@@ -68,6 +81,10 @@ export default function Recognition() {
                             <div className="hof-item">
                                 <p className="hof-text">RE/MAX Hall of Fame Recipient</p>
                                 <img width="178" height="224" src={HallOfFame}/>
+                            </div>
+                            <div className="hof-item">
+                                <p className="hof-text">SOAR Award - Top Agent - 2020</p>
+                                <img width="400" src={SOAR}/>
                             </div>
                             <div className="hof-item">
                                 <p className="hof-text">RE/MAX Miracle Agent</p>
@@ -95,6 +112,10 @@ export default function Recognition() {
                                 <p>2019</p>
                                 <img width="210" height="108" src={Platinum} />
                             </div>
+                            {/* <div className="yearaward-item">
+                                <p>2020</p>
+                                <img width="210"  src={Chairman} />
+                            </div> */}
 
                         </div>
                     </div>

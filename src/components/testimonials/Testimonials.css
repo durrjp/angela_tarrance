@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     font-family: 'Raleway', sans-serif;
-    background-color: rgb(58, 58, 58);
+    overflow-x: hidden;
 }
 
 .testimonialtop-background {
@@ -13,21 +13,7 @@
     height: 500px
 }
 
-.testimonials-container {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 2em;
-    justify-content: space-evenly;
-   
-}
-
-.text-container {
-    width: 900px;
-    text-align: left;
-    font-size: 20px;
-}
-
-.angelapic-container {
+/* .angelapic-container {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -41,18 +27,63 @@
     background-size: cover;
     border-radius: 5px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+} */
+.testimonials-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2em;
+    width: auto;
+    overflow-x: scroll;
 }
+
+.testimonials-container::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+.testimonials-container::-webkit-scrollbar-track {
+    background: none;        /* color of the tracking area */
+}
+
+.testimonials-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(140.42deg, #2A3047 50.45%, #FFFFFF 106.68%);;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+.text-container {
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 4000px;
+    height: 600px;
+}
+
 
 .testimonial-item {
     background-color: rgb(253, 253, 253);
     border-radius: 5px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-    margin-bottom: 1.5em;
+    margin: 16px 16px 16px 16px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    overflow-y: hidden;
 }
 
 .testimonial-text {
-    padding: .8em
+    padding: .8em;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+.testimonial-text::-webkit-scrollbar {
+    display: none;
+}
+
+
 .testimonial-giver {
     font-weight: bold;
     border-radius: 5px;
@@ -61,26 +92,26 @@
 
 .testimonial-author {
     border-radius: 5px;
-    padding: .3em
-
+    padding: .3em;
 }
 
 .externalreviews-container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 .zillow-container {
     display: flex;
     flex-flow: column nowrap;
     margin: 2em;
-    color: white
+    color: rgb(0, 0, 0)
 }
 
 .zillow-button {
     background: none !important;
-    border: 4px solid rgb(255, 255, 255) !important;
-    color: rgb(255, 255, 255) !important;
+    border: 4px solid rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
     font-size: 20px !important;
     font-weight: bold;
     border-radius: 5px;
@@ -98,13 +129,42 @@
     font-size: 23px;
 }
 
+.quotes {
+    width: 30px;
+}
+
+.left-quotes {
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.right-quotes {
+    width: 100%;
+    text-align: end;
+    padding-right: 16px;
+    padding-bottom: 8px;
+}
+
 @media only screen and (max-width: 600px)
 {
     .testimonialtop-background {
         background-size: cover;
+        height: 244px;
+    }
+
+    .testimonials-container {
+        margin: 8px
     }
 
     .angelapic-container {
         display: none;
+    }
+
+    .testimonial-item {
+        width: 250px;
+    }
+
+    .externalreviews-container {
+        flex-wrap: wrap;
     }
 }
