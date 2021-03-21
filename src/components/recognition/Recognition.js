@@ -17,6 +17,8 @@ import SOAR from "../../images/awards/SOAR_Award_2020.png"
 // import Chairman from "../../images/awards/Chairmans_Logo.jpg"
 import { Button } from "reactstrap"
 import fullMag from "../../images/angela/AngelaTarrancePromoCover.pdf"
+import Chairman from "../../images/awards/Chairmans.png"
+import ABC from "../../images/awards/abovethecrowd2.png"
 
 export default function Recognition() {
     return (
@@ -83,12 +85,12 @@ export default function Recognition() {
                                 <img width="178" height="224" src={HallOfFame}/>
                             </div>
                             <div className="hof-item">
-                                <p className="hof-text">SOAR Award - Top Agent - 2020</p>
-                                <img width="400" src={SOAR}/>
-                            </div>
-                            <div className="hof-item">
                                 <p className="hof-text">RE/MAX Miracle Agent</p>
                                 <img width="500" height="224" src={CMN}/>
+                            </div>
+                            <div className="hof-item">
+                                <p className="hof-text">RE/MAX Above the Crowd</p>
+                                <img width="300" height="350" src={ABC}/>
                             </div>
                         </div>
                         <div className="yearawards-container">
@@ -112,10 +114,10 @@ export default function Recognition() {
                                 <p>2019</p>
                                 <img width="210" height="108" src={Platinum} />
                             </div>
-                            {/* <div className="yearaward-item">
+                            <div className="yearaward-item">
                                 <p>2020</p>
                                 <img width="210"  src={Chairman} />
-                            </div> */}
+                            </div>
 
                         </div>
                     </div>
