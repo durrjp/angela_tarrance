@@ -106,7 +106,8 @@
 .yearawards-container {
     display: flex;
     flex-flow: row wrap;
-    margin: auto
+    margin: auto;
+    justify-content: center;
 }
 
 .yearaward-item {

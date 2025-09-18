@@ -2,11 +2,9 @@ import React, { useEffect, useState } from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ValleVerde from "../../images/carousel/1641ValleVerdeStreet.jpg"
-import Bathroom from "../../images/carousel/1641ValleVerdeBathroom.jpg"
 import Clarence1 from "../../images/carousel/4304ClarenceOutside.jpg"
 import PrinceCeiling from "../../images/carousel/PrinceValiantCeiling.jpg"
 import GrannyWhite from "../../images/carousel/5444GrannyWhiteBack.jpg"
-import Nottoway from "../../images/carousel/NottowayFireplace.jpg"
 import Tradition from "../../images/carousel/18TraditionBack.jpg"
 import Westhaven from "../../images/carousel/WesthavenDen.jpg"
 import WesthavenDrone from "../../images/carousel/WesthavenDrone.jpg"
@@ -43,6 +41,10 @@ import CarmelBack from "../../images/carousel/14CarmelBack.jpg"
 import CarmelFountain from "../../images/carousel/14CarmelFountain.jpg"
 import CarmelPiano from "../../images/carousel/14CarmelPiano.jpg"
 import CarmelWine from "../../images/carousel/14CarmelWine.jpg"
+import LehighDrive from "../../images/carousel/LehighDrive.jpg"
+import LehighLivingRoom from "../../images/carousel/LehighDriveLivingRoom.jpg"
+import LowndesFire from "../../images/carousel/LowndesLaneFire.jpg"
+import LowndesPool from "../../images/carousel/LowndesLanePool.jpg"
 import "./Home.css"
 
 export default function CarouselSlider() {
@@ -59,15 +61,12 @@ export default function CarouselSlider() {
     if (width > 400) {
         return (
             <div>
-                <Carousel renderIndicator={false} dynamicHeight={true} fade={true} interval={3500} transitionTime={1000} infiniteLoop autoPlay showThumbs={false}>
+                <Carousel renderIndicator={false} dynamicHeight={true} fade={true} interval={3500} transitionTime={2500} infiniteLoop autoPlay showThumbs={false}>
                     <div>
                         <img className="carousel-image" src={GrannyWhite} alt="suburbs" />
                     </div>
                     <div className="mobile-carousel">
                         <img className="carousel-image" src={ValleVerde} alt="house1" />
-                    </div>
-                    <div className="mobile-carousel">
-                        <img className="carousel-image" src={Bathroom} alt="house1" />
                     </div>
                     <div className="mobile-carousel">
                         <img className="carousel-image" src={Clarence1} alt="house2" />
@@ -77,9 +76,6 @@ export default function CarouselSlider() {
                     </div>
                     <div className="mobile-carousel">
                         <img className="carousel-image" src={GovernorsDining} alt="house2" />
-                    </div>
-                    <div className="mobile-carousel">
-                        <img className="carousel-image" src={Nottoway} alt="house1" />
                     </div>
                     <div className="mobile-carousel">
                         <img className="carousel-image" src={CarmelBack} alt="house1" />
@@ -116,6 +112,18 @@ export default function CarouselSlider() {
                     </div>
                     <div className="mobile-carousel">
                         <img className="carousel-image" src={AvalonEntrance} alt="suburbs" />
+                    </div>
+                    <div className="mobile-carousel">
+                        <img className="carousel-image" src={LehighDrive} alt="suburbs" />
+                    </div>
+                    <div className="mobile-carousel">
+                        <img className="carousel-image" src={LehighLivingRoom} alt="suburbs" />
+                    </div>
+                    <div className="mobile-carousel">
+                        <img className="carousel-image" src={LowndesFire} alt="suburbs" />
+                    </div>
+                    <div className="mobile-carousel">
+                        <img className="carousel-image" src={LowndesPool} alt="suburbs" />
                     </div>
                     <div className="mobile-carousel">
                         <img className="carousel-image" src={GovernorsFlowers} alt="house2" />
