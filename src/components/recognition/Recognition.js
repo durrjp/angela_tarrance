@@ -14,11 +14,13 @@ import CMN from "../../images/CMNLogo.jpg"
 import CRS from "../../images/CRSDesignation.png"
 import ABR from "../../images/ABRDesignation.jpg"
 import SOAR from "../../images/awards/SOAR_Award_2020.png"
+import GRI from "../../images/awards/GRILogo.png"
 // import Chairman from "../../images/awards/Chairmans_Logo.jpg"
 import { Button } from "reactstrap"
 import fullMag from "../../images/angela/AngelaTarrancePromoCover.pdf"
 import Chairman from "../../images/awards/Chairmans.png"
 import ABC from "../../images/awards/abovethecrowd2.png"
+import LifetimeAchievement from "../../images/awards/LifetimeAchievement.png"
 
 export default function Recognition() {
     return (
@@ -71,6 +73,7 @@ export default function Recognition() {
                         <div className="designations-items">
                             <img className="designation-item" width="220" height="224" src={CRS}/>
                             <img className="designation-item" width="220" height="224" src={CLHMSGuild}/>
+                            <img className="designation-item" width="380" height="224" src={GRI}/>
                             <img className="designation-item" width="450" height="224" src={SRES}/>
                             <img className="designation-item" width="500" height="224" src={ABR}/>
                         </div>
@@ -80,6 +83,10 @@ export default function Recognition() {
                     <div className="awards-container">
                         <p className="awards-title">RE/MAX Awards</p>
                         <div className="halloffame-container">
+                            <div className="hof-item">
+                                <p className="hof-text">RE/MAX Lifetime Achievement</p>
+                                <img width="178" height="224" src={LifetimeAchievement}/>
+                            </div>
                             <div className="hof-item">
                                 <p className="hof-text">RE/MAX Hall of Fame Recipient</p>
                                 <img width="178" height="224" src={HallOfFame}/>
@@ -116,6 +123,22 @@ export default function Recognition() {
                             </div>
                             <div className="yearaward-item">
                                 <p>2020</p>
+                                <img width="210"  src={Chairman} />
+                            </div>
+                            <div className="yearaward-item">
+                                <p>2021</p>
+                                <img width="210"  src={Chairman} />
+                            </div>
+                            <div className="yearaward-item">
+                                <p>2022</p>
+                                <img width="210"  src={Platinum} />
+                            </div>
+                            <div className="yearaward-item">
+                                <p>2023</p>
+                                <img width="210"  src={Chairman} />
+                            </div>
+                            <div className="yearaward-item">
+                                <p>2024</p>
                                 <img width="210"  src={Chairman} />
                             </div>
 

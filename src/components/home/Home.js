@@ -26,9 +26,7 @@ export default function Home() {
             <div className="carousel-overlay">
                 <p className="carousel-title">Angela Tarrance</p>
                 <div className="carousel-details">
-                    <p>Best Service</p>
                     <p>Nashville Luxury Homes</p>
-                    <p>Mother</p>
                 </div>
             </div>
             <Header />
